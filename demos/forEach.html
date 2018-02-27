@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ForEach遍历时,修改(i = Object.assign({},i,{open:false}))遍历获得的参数,原对象无变化的错误</title>
+</head>
+<body>
+
+<script>
+  var data = {
+    "code": 0,
+    "message": "查询审核记录成功",
+    "data": {
+      "attributeAuditVo": [
+        {
+          "goodsAttrValue": "1L",
+          "stock": 100,
+          "goodsAttrSn": "F05555",
+          "beforePrices": [
+            {
+              "priceId": null,
+              "attrItemIds": null,
+              "goodsAttrSn": "F05555",
+              "areaId": 111111111,
+              "factoryPrice": 10.0,
+              "baseSupplyPrice": 10.5,
+              "supplyPrice": 10.5,
+              "retailPrice": 13.0,
+              "retailServiceFee": 0.0,
+              "marketPrice": 20.0,
+              "floatingPrice": 0.0,
+              "rebate": 5.0,
+              "stock": null,
+              "disable": 0,
+              "isProvinceNoSale": 0
+            }
+          ],
+          "afterPrices": [
+            {
+              "priceId": null,
+              "attrItemIds": null,
+              "goodsAttrSn": "F05555",
+              "areaId": 111111111,
+              "factoryPrice": 10.0,
+              "baseSupplyPrice": 10.5,
+              "supplyPrice": 10.5,
+              "retailPrice": 15.0,
+              "retailServiceFee": 0.0,
+              "marketPrice": 20.0,
+              "floatingPrice": 0.0,
+              "rebate": 5.0,
+              "stock": 100,
+              "disable": 0,
+              "isProvinceNoSale": 0
+            }
+          ]
+        }
+      ],
+      "haveServiceFee": true,
+      "ordinaryGoodsAudits": [
+        {
+          "id": 2835,
+          "auditType": 1,
+          "auditObject": "goodsName",
+          "auditObjectItem": null,
+          "detail": null,
+          "status": 10,
+          "goodsId": 26289,
+          "beforeContent": "测试审核记录2",
+          "afterContent": "测试审核记录",
+          "serialNumber": "1802241783488551",
+          "isDelete": 0,
+          "createTime": "2018-02-24 17:48:51.0",
+          "updateTime": "2018-02-24 17:48:51.0"
+        },
+        {
+          "id": 2836,
+          "auditType": 2,
+          "auditObject": "moq",
+          "auditObjectItem": null,
+          "detail": null,
+          "status": 10,
+          "goodsId": 26289,
+          "beforeContent": "11",
+          "afterContent": "10",
+          "serialNumber": "1802241783488551",
+          "isDelete": 0,
+          "createTime": "2018-02-24 17:48:51.0",
+          "updateTime": "2018-02-24 17:48:51.0"
+        },
+        {
+          "id": 2837,
+          "auditType": 4,
+          "auditObject": "goodsThumb",
+          "auditObjectItem": null,
+          "detail": null,
+          "status": 10,
+          "goodsId": 26289,
+          "beforeContent": "https://img.car-house.cn/Upload/goods/20180224/source/f4cab555420249f3816f6f857465120a.jpg,Upload/goods/20180224/source/c9c5c2d540804c93b90bad883fd0e568.jpg,Upload/goods/20180224/middle/c9c5c2d540804c93b90bad883fd0e568.jpg",
+          "afterContent": "https://img.car-house.cn/Upload/goods/20180224/source/c9c5c2d540804c93b90bad883fd0e568.jpg,Upload/goods/20180224/middle/c9c5c2d540804c93b90bad883fd0e568.jpg",
+          "serialNumber": "1802241783488551",
+          "isDelete": 0,
+          "createTime": "2018-02-24 17:48:51.0",
+          "updateTime": "2018-02-24 17:48:51.0"
+        },
+        {
+          "id": 2838,
+          "auditType": 5,
+          "auditObject": "goodsSpec",
+          "auditObjectItem": null,
+          "detail": null,
+          "status": 10,
+          "goodsId": 26289,
+          "beforeContent": "3213123132",
+          "afterContent": "54645465654654",
+          "serialNumber": "1802241783488551",
+          "isDelete": 0,
+          "createTime": "2018-02-24 17:48:51.0",
+          "updateTime": "2018-02-24 17:48:51.0"
+        },
+        {
+          "id": 2839,
+          "auditType": 6,
+          "auditObject": "goodsDesc",
+          "auditObjectItem": null,
+          "detail": null,
+          "status": 10,
+          "goodsId": 26289,
+          "beforeContent": "<p>3123123213<br data-mce-bogus=\"1\"></p>",
+          "afterContent": "<p>3123123213萨达撒大所</p>",
+          "serialNumber": "1802241783488551",
+          "isDelete": 0,
+          "createTime": "2018-02-24 17:48:51.0",
+          "updateTime": "2018-02-24 17:48:51.0"
+        }
+      ],
+      "areas": []
+    }
+  }
+
+  function _normalGoodsPrice (areas, attributeAuditVo) {
+
+    // 给价格添加地址
+
+    attributeAuditVo.forEach(items => {  // items一个属性
+      items.beforePrices.forEach(i => {
+        // forEah方法与map方法很相似,也是对数组的所有成员一次执行参数函数。 i和items都是零时变量, i当前表示(执向)的是items.beforePrices中的某一项
+        // 使用 i = Object.assign({},i,{areaName:'基准区域'}) 时  ,i 的执行改变了，并没有修改原来的 items.beforePrices中的某一项(javaScript高级程序设计 4.1.3传递参数(值传递,如果是对象))
+        areas.forEach(area => {
+          if (i.areaId === area.areaId) {
+            i = Object.assign({}, i, {areaName: area.areaName})
+          }
+        })
+        if (i.areaId === 111111111) {
+          i = Object.assign({}, i, {areaName: '基准区域'})
+        }
+        console.log('i:', i)
+      })
+      items = Object.assign({}, items, {open: false})
+      console.log('items:', items)
+
+    })
+    return attributeAuditVo
+  }
+
+  var attributeAuditVo = _normalGoodsPrice(data.data.areas, data.data.attributeAuditVo)
+  console.log('attributeAuditVo:', attributeAuditVo)
+</script>
+</body>
+</html>
