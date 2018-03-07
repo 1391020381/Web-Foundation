@@ -38,7 +38,7 @@
      app.listen(port, host)
      ```
   8. [dynamic-components](https://github.com/nuxt/nuxt.js/tree/dev/examples/dynamic-components) 
-  9. dynamic-layouts
+  9. [dynamic-layouts](https://github.com/nuxt/nuxt.js/tree/dev/examples/layout-transitions)
       * 在middleware书写中间件,当作在组件中引入某个布局的判断条件 
       * 在 nuxt.config.js {router:middleware:['mobile']}
       * layout: ({ isMobile }) => isMobile ? 'mobile' : 'default'  
