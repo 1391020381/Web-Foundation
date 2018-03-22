@@ -1,0 +1,1 @@
+[大流量网站性能优化：一步一步打造一个适合自己的BigRender插件](http://www.cnblogs.com/zichi/p/5252629.html)
