@@ -26,3 +26,11 @@
   * echo 'export PATH=/usr/local/node-v9/bin:$PATH' >> /etc/profile
   2. 生效环境变量
    * source /etc/profile
+
+
+
+#  安装node.js
+1. curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+yum -y install nodejs
+2. 测试node版本
+  * node -v
