@@ -20,9 +20,17 @@
 1. 下载 node 的压缩包中已经包含了 npm , 我们只需要将其软链接到 bin 目录下即可
    * ln -s /usr/local/node-v6/bin/npm /bin/npm  
 ## 配置和使用npm
- ## 配置环境变量
+ ## 配置环境变量(sudo -s)
   1. 将 /usr/local/node-v6/bin 目录添加到 $PATH 环境变量中可以方便地使用通过 npm 全局安装的第三方工具
   * echo 'export PATH=/usr/local/node-v6/bin:$PATH' >> /etc/profile
   * echo 'export PATH=/usr/local/node-v9/bin:$PATH' >> /etc/profile
   2. 生效环境变量
    * source /etc/profile
+
+
+
+#  安装node.js
+1. curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+yum -y install nodejs
+2. 测试node版本
+  * node -v
