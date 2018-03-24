@@ -20,3 +20,4 @@
   * apt-get install nginx
   * nginx -V  
   * /etc/nginx/conf.d   sudo vim imooc-com-8081.conf
+ # 利用 DNSPod 管理域名解析 
