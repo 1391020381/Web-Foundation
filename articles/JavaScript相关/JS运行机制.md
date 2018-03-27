@@ -50,8 +50,23 @@
          * 在XMLHttpRequest在连接后是通过浏览器新开一个线程请求
          * 将检测到状态变更时,如果设置回调函数,异步线程就产生状态变更事件,将这个回调再放入事件队列中。再有JavaScript引起执行。
        
-   ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/JavaScript%E7%9B%B8%E5%85%B3/img/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.jpg)   
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/JavaScript%E7%9B%B8%E5%85%B3/img/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.jpg)   
  
 # Brower进程和浏览器内核(Renderer进程)的通信过程
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/JavaScript%E7%9B%B8%E5%85%B3/img/%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1.jpg)
+
+# 梳理浏览器内核中线程之间的关系
+  1. GUI渲染线程与JS引擎线程互斥
+  2. JS阻塞页面加载
+  3.  WebWorker,JS的多线程
+       * JS引擎是单线程的，这一点的本质仍然未改变，Worker可以理解是浏览器给JS引擎开的外挂，专门用来解决那些大量计算问题。
+  4. WebWorker 与 SharedWorker
+     * SharedWorker由独立的进程管理，WebWorker只是属于render进程下的一个线程
+# 简单梳理下浏览器渲染流程
+   * 浏览器输入url,浏览器主进程接管,开一个下载线程
+   * 然后进行 http请求(略去DNS查询,IP寻址等等操作),然后等待响应,获取内容
+   * 随后将内容通过 RendererHost接口转交给Renderer进程
+   * 浏览器渲染流程开始  
+       
 
  
