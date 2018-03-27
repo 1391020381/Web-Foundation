@@ -50,4 +50,8 @@
          * 在XMLHttpRequest在连接后是通过浏览器新开一个线程请求
          * 将检测到状态变更时,如果设置回调函数,异步线程就产生状态变更事件,将这个回调再放入事件队列中。再有JavaScript引起执行。
        
-        
+   ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/JavaScript%E7%9B%B8%E5%85%B3/img/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.jpg)   
+ 
+# Brower进程和浏览器内核(Renderer进程)的通信过程
+
+ 
