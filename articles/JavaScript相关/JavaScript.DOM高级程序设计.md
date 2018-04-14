@@ -84,6 +84,47 @@ myConstructor.alertName = function(){
       1. 自定义JavaScript日志对象<将原生的调试信息,输出到自己的日志窗口中>  
 ## DOM2核心和DOM2 HTML
   * DOM是一组用来描述脚本怎样与结构化文档进行交互和访问的web标准。DOM定义了一系类列对象、方法和属性,用于访问、操作和创建文档中的内容、结构、样式以及行为。
+  * DOM1 和DOM2 及DOM3
+     1. 在Web浏览器中, DOMImplementation 对象被实例化为 document.implementation.hasFeature()
+     2. 当在迭代每个节点childNodes时需要记住文本节点
+     3. 在浏览器解析完某个网页文档后,每个节点并非就是一个简单的Element对象的实例,而是继承了很多东西的Element底线的扩展。
+     4. 取决于文档的标记、nodeName以及适合于该特定标签的DOMHTML规范,每项都将继承一组特定的属性和方法。事实上Element对象自身就继承了Node对象的所有属性和方法。例如具体的<a>锚元素而言,该标签是一个DOM2 HTML规范中的HTMLAnchorElement对象,该对象有扩展自其它一些对象。
+     5. 核心Node对象
+        * 节点名称、值和类型
+        * 父节点、子节点和同辈节点
+        * childNodes<NodeList对象>  parentNode  
+        * previousSibling和nextSibling
+        * 节点属性
+        * 节点的ownerDocument属性<一个节点的ownerDocument属性类似于指向节点所属根文档的引用。大多数情况下,都可以通过它在作用域链中的引用document>
+        * hasChildNodes()和hasAttributes()
+        * appendChild和insertBefore
+        * replaceChild和removeChild
+        * document.getElementById()方法取得的是一个节点的引用,而非节点的副本。
+     6. 核心Element对象   
+        1. 操作Element对象的属性
+           * getAttribute(name)
+           * setAttribute(name,value)
+           * removeAttribute(name)
+     7. 核心Document对象
+        1. document.docuemntElement属性  
+        2. 遍历和迭代DOM树
+        ```
+    function walkTheDOMRecursive(func,node,depth,returnedFromParent){
+        var root = node || window.document
+        var returnedFromParent = func.call(rot,depth++,returnedFromParent)
+        var node = root.firstChild
+        while(node){
+            walkTheDOMRecursive(func,node,depth,returnedFromParent)
+            node = node.nextSibling
+        }
+    }
+
+        ``` 
+   8.  DOM2 HTML的HMTLDocument对象
+       * title
+       * referrer包含链接到当前页面的前一个页面的URL
+       * domain包含当前站点的域名
+       * links是一个包含与当前文档中所有<link>标签对应的DOM节点的数组集合    
 ## 响应用户操作和事件
 ## 动态修改样式和层叠样式表
 ## 案例研究:图像裁剪和缩放工具
