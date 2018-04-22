@@ -57,3 +57,16 @@
  * 在MySql的select的Concat()函数来拼接两个列。
  * select Concat(vend_name,'(',vend_country,')') from vendors order by vend_name
  * select Concat(RTrim(vend_name),'(',RTrim(vend_country),')') from vendors order by vend_name
+ * 使用 别名 as
+ * select Concat(RTrim(vend_name),'(',RTrim(vend_country),')') AS vend_title from vendors order by vend_name
+ * 执行算数计算  select prod_id,quantity,item_price,quantity*item_prices AS expanded_price from orderitems where order_num = 2005
+ * mysql 支持  + - * /
+ # 使用数据处理函数
+ * 大多数SQL实现支持一下类型的函数
+ * 用于处理文本串
+ ```
+ select vend_name, Upper(vend_name) AS vend_name_upcase from vendors order by vend_name
+ ```
+ * 算数计算
+ * 用于处理日期和时间值并从这些值中提取特定成分。
+ *  返回DBMS正在使用的特殊信息。      
