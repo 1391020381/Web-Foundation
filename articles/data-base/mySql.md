@@ -69,4 +69,51 @@
  ```
  * 算数计算
  * 用于处理日期和时间值并从这些值中提取特定成分。
- *  返回DBMS正在使用的特殊信息。      
+ *  返回DBMS正在使用的特殊信息。   
+ # 汇总数据
+ * 确定表中行数(或者满足满足某个条件或者包含某个特定值的行数)
+ * 获得表中行组的和
+ * 找出表列(最大值、最小值 平均值)   
+ # 分组数据
+ *  select vend_id ,count(*) as num_prods from products group by vend_id <group by 子句指示mysql分组数据,然后对数据每个组而不是整个结果集进行聚集>
+ * havinng where  where在数据分组前进行过滤, having在数据分组后进行过滤
+ * 一般在使用 GROUP BY 子句时，应该也给出 ORDER BY 子句。这是保证数据正确排序的唯一方法。千万不要仅依赖 GROUP BY 排序数据。
+ * 子查询 <嵌套在其他查询中的查询>
+ * select cust_id from orders where order_num in (select order_num from orderitems where prod_id = 'TNT2')
+ * 在select语句中,子查询总是从内部往外处理
+ * 作为计算字段使用查询 
+ * select cust_name,cust_state,(select count(*) from orders where orders.cust.id = customers.cust._id) AS orders) from customer order by cust_name
+ # 联结表
+ * 关键是,相同数据出现多次决不是一件好事,此因素是关系数据库设计的基础。关系表的设计就是要保证把信息分解成多个表,一类数据一个表。各个表通过某些常用的值(即关系设计中的关系 relational)互相关联。
+ *  外键(foreign key) 外键为某个表中的一列,它包含另一个表的主键,定义了两个表之间的关系。
+ * 可伸缩性 能够适应不断增加的工作量而不失败。设计良好的数据库或应用程序称为可伸缩性好(sclae well)
+ * 简单的说,联结是一种机制,用来在一条select语句中关联表,因此称为关联。
+ ## 创建联结
+  ```
+  select vend_name,prod_name,prod_price from vendors,produts where vendors.vend_id =  products.vend_id order by vend_name,prod_name
+  ```
+  * 笛卡尔积(cartesian product) 由没有联结条件的表关系返回的结果为笛卡尔积。检索出的行的数目将是第一个表中的行数乘以第二个表中的行数。
+  * 基于两个表之间相等测试。这个联结也称为内部联结。
+  ```
+  select vend_name,prod_name,prod_price  from vendors INNER JOIN products ON vendors.vend_id = products.vend_id
+  ```
+  * 优先使用 INNER JOIN
+  * sql对一条select语句中可以联结的表的数目没有限制。创建联结的基本规则也相同。
+  ```
+select prod_name,vend_name,prod_price,quantity from orderitems,products,vendors
+where products.vend_id = vendors.vend_id and orderitems.prod_id = products.prod_id
+  ```
+  # 创建高级联结
+  ```
+  select cust_name,cust_contact from customers AS c, orders as o , orderitems as oi where c.cust_id = o.cust_id and 
+   oi.order_num = o.order_num and prod_id = 'tnt2'
+
+  ```
+  * 应该注意,表别名只在查询执行中使用。与列名不一样,表别名不返回到客户机。
+  * 标准的联结(前一章中介绍的内部联结) 返回所有数据,甚至相同的列多次出现。自然联结排除多次出现,使每个列值返回一次。 系统不完成这项工作,由自己完成。
+  * 联结包含了那些在相关表中没有关联行的行。这种类型的联结称为外部联结。
+  ```
+  select customers.cust_id ,orders.order_num from customers left outer join orders on customers.cust_id = orders.cust_id
+
+  ```
+  * right 指出的是 Outer join 有边的表  left指出的是  outer join做边的表
