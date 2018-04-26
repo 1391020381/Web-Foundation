@@ -68,3 +68,8 @@ prod_desc     产品描述
 
 
  ```
+
+ * 供应商   vend_id     商品  prod_id      vend_id
+ * 顾客   cust_id   订单  order_num   cust_id
+ * 订单实际商品  order_num<订单>  prod_id <商品>
+ * 注释   note_id   prod_id <商品>
