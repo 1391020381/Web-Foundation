@@ -117,3 +117,53 @@ where products.vend_id = vendors.vend_id and orderitems.prod_id = products.prod_
 
   ```
   * right 指出的是 Outer join 有边的表  left指出的是  outer join做边的表
+  # 组合查询
+  * 多个SQL查询都只包含从一个或多个表中返回数据的单条select语句。mySQL也允许执行多个查询(多条select语句),并将结果作为单个查询结果集返回。
+  这些组合查询通常称为 并 (union)或复合查询(compound query)
+  * 有两个基本情况,其中需要使用组合查询: 在单个查询中从不同的表返回类似结构的数据      对单个表执行多个查询,按单个查询返回数据。
+  * union的默认行为除重，可使用union all 而不是 union 使用union all mysql不取消重复的行
+  * 在使用union组合查询时,只能使用一条order by 子句,它必须出现在最后一条select语句之后。
+  * 可以组合不同的表
+  # 全文本搜索
+  * 最常使用的引擎为 MyISAM 和 InnoDB 前者支持全文本搜索，后者不支持。
+  * 通配符   正则
+  * 在使用全文本搜索时，MySQL不需要分别查看每个行，不需要分别分析和处理每个词。MySQL创建指定列中各词的一个索引，搜索可以针对这些词进行。这样，MySQL可以快速有效地决定哪些词匹配（哪些行包含它们），哪些词不匹配，它们匹配的频率，等等
+  ```
+   create table productontes
+   (
+   note_id        int       NOT NULL AUTO_INCREMENT
+   prod_id       char(10)   NOT NULL
+   note_date     daetime    NOT NULL
+   note_text     text          NULL
+   PRIMARY KEY(note_id),
+   FULLTEXT(note_text)
+   ) ENGINE = MyISAM
+  ```
+  * 在定义之后,MySQL自动维护该索引。在增加、更新或删除行时，索引自动更新
+  * Mathc()指定被搜索的列 Against() 指定要使用的索引表达式
+  * 使用查询扩展
+  * 布尔文本搜索 即使没有定义 FULLTEXT索引,也可以使用
+  # 插入数据 insert    <可针对每个表或每个用户,利用mysql安全机制禁止使用 inset语句>
+  * 插入完整的行
+  * 插入行的一部分
+  * 插入多行
+  *  插入某些查询结果
+  * insert语句不会产生输出
+  ```
+  INSERT INTO customers(cust_name,cust_address,cust_city,cust_state,cust_zip,cust_country,cust_contact,cust_email)
+   VALUES(NULL,'Pep E. LaPew','100 Main Street','Los Angeles','CA','90046','usa',NULL,NULL)
+
+// 因为提供了列名,Values必须以指定的次序匹配指定的列名,不一定按各个列现在实际表中的次序。其优点是,
+即使表的结构改变,此inset语句仍然可以工作。
+
+使用这种语法，还可以省略列。这表示可以只给某些列提供值，给
+其他列不提供值。
+
+如果表的定义允许，则可以在 INSERT 操作中省略某
+些列。省略的列必须满足以下某个条件。
+  该列定义为允许 NULL 值（无值或空值）。
+  在表定义中给出默认值。这表示如果不给出值，将使用默
+认值。
+如果对表中不允许 NULL 值且没有默认值的列不给出值，则
+MySQL将产生一条错误消息，并且相应的行插入不成功
+  ```
