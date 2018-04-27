@@ -167,3 +167,14 @@ where products.vend_id = vendors.vend_id and orderitems.prod_id = products.prod_
 如果对表中不允许 NULL 值且没有默认值的列不给出值，则
 MySQL将产生一条错误消息，并且相应的行插入不成功
   ```
+# 插入检索出的数据
+ ```
+ insert into customers () select cust_id ,cust_contact from custnew
+ ```
+ # 更新和删除数据  update delete
+ ```
+ update customers set cust_email = 'elmer@fudd.com',cust_name = 'The Fudds' where cust_id = 10005
+ ```
+ * 在update中使用子查询   UPDATE 语句中可以使用子查询，使得能用 SELECT 语句检索出的数据更新列数据。
+ * delete  DELETE 不需要列名或通配符。 DELETE 删除整行而不是删除列。为了删除指定的列，请使用 UPDATE 语句。
+ # 创建表
