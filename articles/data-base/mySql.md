@@ -228,3 +228,12 @@ MySQL将产生一条错误消息，并且相应的行插入不成功
    * 回退(rollback)指撤销指定SQL语句的过程
    * 提交(commit)指将未存储的sql语句结果写入数据库表
    * 保留点 (savepoint) 指事务处理中设置的临时占位符(place-holder),你可以对它发布回退(与回退整个事务处理不同)
+   * 管理事务处理的关键在于将SQL语句组分解为逻辑块,并明确规定数据何时应该退回。
+   ```
+   select * from ordertotals
+   start transaction
+   delete from ordertotals
+   select * from ordertotals
+   rollback
+
+   ```
