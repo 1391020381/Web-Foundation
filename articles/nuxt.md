@@ -1,6 +1,6 @@
 # nuxt官网examples
  1. async-component-injection
-     ![](https://github.com/1391020381/Web-Foundation/blob/master/img/nuxt-async-component-injection.png)
+     ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/img/nuxt-async-component-injection.png)
  2. async-data
  3. auth-routes
  4. cached-components 

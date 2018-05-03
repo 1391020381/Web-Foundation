@@ -3,6 +3,8 @@
 * 每一个JavaScript对象(null除外)在创建的时候就会与之关联另一个对象,这个对象就是我们所说的原型,每个对象都会从原型'继承'属性。
 * 每一个JavaScript对象(除了null)都具有一个属性,叫__proto__,这个属性会指向该对象的原型。
 * 构造函数的prototype原型属性(指针),指向原型对象,原型对象的 constructor指向构造函数,  构造函数的实例的[[Prototype]] __proto__指向构造函数的原型
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/img/prototype2.png)
 * Object.defineProperty(person,'name',{writable:false,value:'justdoit'})
 * 一旦把属性定义为不可配置的,就不能再把它变回可配置了。可以多次调用Object.defineProperty方法修改同一个属性,但在把configurable特性设置为false之后就会有限制了。
 ```
