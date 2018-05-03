@@ -15,6 +15,7 @@
 * 全局上下文的变量对象就是全局对象
 ### 函数上下文
 * 在函数上下文中,我们用活动对象(activation object, AO)来表示变量对象。
+* 活动对象和变量对象其实是一个东西,只是变量对象时规范的或者说是引擎实现的,不可在JavaScript环境中访问,只有到当进入以执行上下文中,这个执行上下文的变量对象才会被激活,所以才叫activation objects，而只有被激活的变量对象,也就是激活对象上的各种属性才能被访问。
 * 活动对象是在进入函数上下文时刻被创建的,它通过函数的argumnets属性初始化。arguments属性值是 Arauments对象。
 ### 执行过程
 * 分析(进入执行上下文)
@@ -40,3 +41,67 @@
 
 # 作用域链
 * 但查找变量的时候,会先从当前上下文的变量对象中查找,如果没有找到,就会从父级(词法作用域层面上的父级)执行上下文的变量对象中查找,一直找到全局上下文的变量对象,也就是全局对象。这样由多个执行上下文的变量对象构成的链表就叫做作用域链。
+### 函数创建
+* 函数的作用域在函数定义的时候就决定了。这是因为函数有一个内部属性[[scope]]，当函数创建的时候,就会保存所有变量对象到其中,可以理解[[scope]]就是所有父变量对象的层级链,但是注意：[[scope]]并不代表完整的作用域链！
+```
+function foo(){
+    function bar(){}
+}
+```
+* foo.[[scope]] = [ golobalContext.VO ]
+* bar.[[scope]] = [ fooContext.AO,globalContext.VO ]
+## 函数激活
+* 当函数激活时,进入函数上下文,创建VO/A0 后,就会将活动对象添加到作用链的前端
+*  这时执行上下文的作用域链,命名为Scope： Scope = [AO].concat([[Scope]])
+# 总结
+```
+var scope  = 'global scope'
+function checkscope(){
+    var scope2 = 'local scope'
+    return scope2
+}
+
+checkscope()
+
+```
+1. chheckscope函数被创建,保存作用域链到内部属性[[scope]]
+    * checkscope.[[scope]] = [globalContext.Vo]
+2. 执行checkscope函数,创建checksopce函数执行上下文,checkscope函数执行上下文被压入 执行上下文栈
+    * ECStack = [
+        checkscopeContext,
+        globalContext
+    ]
+3. checkscope函数并不立刻执行,开始做准备工作,第一步：复制函数[[scope]]属性创建作用域链
+    * checkscopeContext = {Scope:checkscope.[[scope]]}
+4. 第二步：用arguments创建活动对象,随后初始化活动对象,加入形参、函数声明、变量声明
+   * checkscopeContext = {
+       AO: {
+           arguments:{
+               length:0
+           },
+           scope2:undefined
+       },
+       Scope:checkscope.[[scope]]
+   }           
+ 5. 第三部：将活动对象压入checkscope作用域链顶端  
+    * checkscopeContext = {
+        AO:{
+            argument:{
+               length:0 
+            },
+            scope2:undefined
+        },
+        Scope:[AO,[[Scope]]]
+    }
+ 6. 准备工作做完,开始执行函数,随着函数的执行,修改AO的属性值
+    *  checkscopeContext = {
+        AO:{
+            arguments:{
+                length:0
+            },
+            scope2:'local scope'
+        },
+        Scope:[AO,[[Scope]]]
+    }
+ 7. 查找到scope2的值,返回后函数执行完毕,函数上下文从执行上下文栈弹出
+    * ECStack = [ globalContext ]   
