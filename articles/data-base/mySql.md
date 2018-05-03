@@ -237,3 +237,11 @@ MySQL将产生一条错误消息，并且相应的行插入不成功
    rollback
 
    ```
+   ```
+  START TRANSACTION;
+  delete from orderitems where order_num = 20010;
+  delete from orders where order_num = 20010;
+  commit
+   ```
+   # 全球化和本地化
+   
