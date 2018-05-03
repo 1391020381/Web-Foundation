@@ -105,3 +105,11 @@ checkscope()
     }
  7. 查找到scope2的值,返回后函数执行完毕,函数上下文从执行上下文栈弹出
     * ECStack = [ globalContext ]   
+# 函数的执行
+1. 首先使用函数的[[Scope]]的保存 全部对向  function.[[Scope]] = [globalContext.VO]   
+2. 将函数的执行上下文压入执行上下文栈  ECStack = [functionContext,globalContext]
+3. function 不是立即执行,而是开始准备工作<执行上下文有三个重要属性,VO,SCOPE,THIS>  functionContext = {Scope:function.[[scope]]}
+4. 利用argument创建AO 随后初始化AO,形参、变量、函数
+5. 将AO 推入scope<作用域>的首位
+6. 准备总做完成,执行函数,随着函数的执行修改AO的属性值。
+7. 弹栈
