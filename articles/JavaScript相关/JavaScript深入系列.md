@@ -5,6 +5,18 @@
 * 构造函数的prototype原型属性(指针),指向原型对象,原型对象的 constructor指向构造函数,  构造函数的实例的[[Prototype]] __proto__指向构造函数的原型
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/img/prototype2.png)
+
+* 原型也是一个对象,既然是对象,我们就可以用最原始的方式创建它,那就是
+```
+ var obj = new Object()
+ obj.name = 'Kevin'
+```
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/img/prototype5.png)
+
+
+
+
+
 * Object.defineProperty(person,'name',{writable:false,value:'justdoit'})
 * 一旦把属性定义为不可配置的,就不能再把它变回可配置了。可以多次调用Object.defineProperty方法修改同一个属性,但在把configurable特性设置为false之后就会有限制了。
 ```
