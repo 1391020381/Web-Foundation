@@ -40,3 +40,60 @@ function debounce(func,wait){
    }
   }
 ```
+## 是否立即执行
+```
+function debounce(func,wait,immediate){
+  var timeout,result;
+
+  return function(){
+    var context = this;
+    var args = arguments
+    if(timeout) clearTimeout(timeout)
+    if(immediate){
+     // 如果以执行过,timeout有值,就不再执行
+    var callNow = !timeout
+    timeout = setTimeout(function(){
+      timeout = null
+    },wait)
+    if(callNow) func.apply(context,args)
+    }else{
+      clearTimeout(timeout)
+      timeout = setTimeout(function(){
+        func.apply(context,args)
+      },wait)
+    }
+  }
+ }
+```
+## 返回值
+## 取消
+```
+
+function debounce (func,wait,immediate){
+  var timeout,result;
+  var debounced = function(){
+     var context = this;
+     var args = arguments
+     if(timeout) clearTimeout(timeout)
+     if(immediate){  // 首次执行
+       var callNow = !timeout
+       timeout  = setTimeout(function(){
+         timeout = null
+       },wait)
+       if(callNow) restul = func.apply(context,args)
+     }else{
+       clearTimeout(timeout)
+       setTimeout(function(){
+        func.apply(context,args)
+       },wait)
+     }
+     return result
+    }
+    debounced.cancle = function(){
+       clearTimeout(timeout)
+       timeout = null
+     }
+     return debounced
+  }
+
+```
