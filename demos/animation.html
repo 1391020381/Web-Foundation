@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 500px;
+      height: 500px;
+      background: #2277da;
+      text-align: center;
+      line-height: 500px;
+      -webkit-transform: translate(0, 0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transform: translate(0, 0);
+      transition: transform 1000ms;
+    }
+
+    .box.move {
+      -webkit-transform: translate(50px, 50px);
+      transform: translate(50px, 50px);
+    }
+
+    .boxKeyFrames {
+      position: absolute;
+      right: 0;
+      top: 0;
+      animation-name: movingBox;
+      animation-duration: 2300ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    /**
+    translate(x,y)
+    以第四象限为准,箭头方向为正
+    **/
+    @keyframes movingBox {
+      0% {
+        transform: translate(-40px, 30px);
+        opacity: 0.4;
+      }
+      25% {
+        opacity: 0.9;
+      }
+      50% {
+        transform: translate(-150px, 200px);
+        opacity: 0.2;
+      }
+      100% {
+        transform: translate(-40px, 30px);
+        opacity: 0.8;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  Sample content
+</div>
+
+<div class="boxKeyFrames">
+  <img src="../img/sessionstack-logo.png">
+</div>
+<script>
+  var boxElement = document.querySelector('.box');
+  var animation = boxElement.animate([
+    {transform: 'translate(0)'},
+    {transform: 'translate(150px, 200px)'}
+  ], 500);
+  animation.addEventListener('finish', function () {
+    boxElement.style.transform = 'translate(150px, 200px)';
+  });
+
+</script>
+</body>
+</html>
