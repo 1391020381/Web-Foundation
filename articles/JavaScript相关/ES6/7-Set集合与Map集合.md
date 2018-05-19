@@ -47,3 +47,25 @@ Array.from(set)
 * Map是存储许多键值对的有序列表,key和value支持所有数据类型
 ## 创建Map
 * 如果说Set像数组,那么Map更像对象。而对象中的key只支持字符串,Map更加强大,支持所有数据类型,不管是数字、字符串、Symbol等。
+```
+let map = new Map()
+map.set('name','haha')
+map.set('id',10)
+```
+1. set()
+2. get()
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/JavaScript%E7%9B%B8%E5%85%B3/img/map.png)
+## 使用对象做key
+```
+let map = new Map()
+const key = {}
+map.set(key,'谁知道这是个什么玩意')
+console.log(map.get(key))  // 谁知道这是个什么玩意
+```
+## Map同样可以使用forEach遍历key、vlaue
+```
+map.forEach((value,key)=>{
+    console.log(key,value)
+})
+```
+## Weak Map
