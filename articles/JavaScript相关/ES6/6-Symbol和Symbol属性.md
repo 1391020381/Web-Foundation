@@ -28,3 +28,22 @@ iframe.contentWindow.Symbol.for('foo') = Symbol.for('foo')
 ```
 ## Symbol与类型强制转换
 * Symbol 不支持这种转换。
+## Symbol检索
+* 在对象中获取字符串key时,可以使用Object.keys(),但是 使用 Symbol做key时,只能是使用ES6新增的方式获取
+```
+let a = Symbol('a');
+    let b = Symbol('b');
+    
+    let obj = {
+      [a]: "123",
+      [b]: 45
+    }
+    
+    const symbolsKey = Object.getOwnPropertySymbols(obj);
+    
+    for(let value of symbolsKey) {
+      console.log(obj[value]) 
+    }
+    //"123"
+    //45
+```
