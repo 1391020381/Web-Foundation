@@ -6,3 +6,4 @@
 * HTTP协议规定,请求从客户端发出,最后服务端响应该请求并返回。
 1. 请求报文
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87%E7%9A%84%E6%9E%84%E6%88%90.png)
