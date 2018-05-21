@@ -75,3 +75,11 @@
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/DSN%E6%9C%8D%E5%8A%A1.png)
 
 ### 各种协议与 HTTP 协议的关系
+* 我们再通过这张图来了解下 IP 协议、TCP 协议和 DNS 服务在使用HTTP 协议的通信过程中各自发挥了哪些作用。
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/IP%20%E5%8D%8F%E8%AE%AE%E3%80%81TCP%20%E5%8D%8F%E8%AE%AE%E5%92%8C%20DNS%20%E6%9C%8D%E5%8A%A1%E5%9C%A8%E4%BD%BF%E7%94%A8%20HTTP%20%E5%8D%8F%E8%AE%AE%E7%9A%84%E9%80%9A%E4%BF%A1%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%90%84%E8%87%AA%E5%8F%91%E6%8C%A5%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BD%9C%E7%94%A8.png)
+### URI 和 URL
+* URI 是 Uniform Resource Identifier 的缩写。
+* URI 就是由某个协议方案表示的资源的定位标识符。协议方案是指访问资源所使用的协议类型名称。
+* URL 是URI的子集
+#### URI 的格式
+
