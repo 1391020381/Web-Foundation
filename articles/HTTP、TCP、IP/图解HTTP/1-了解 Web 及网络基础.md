@@ -72,5 +72,6 @@
 * DNS(Domain Name System)服务是HTTP协议一样位于应用层的协议。它提供域名到IP地址之间的解析服务。
 * 计算机既可以被赋予IP地址,也可以被赋予主机名和域名。
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/DSN%E6%9C%8D%E5%8A%A1.png)
 
-
+### 各种协议与 HTTP 协议的关系
