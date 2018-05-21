@@ -52,3 +52,99 @@ class B{
   constructor(){ }
  }
 ```
+# 类是一等公民
+* JavaScript函数是一等公民,类也设计成一等公民
+1. 可以将类作为参数传入函数。
+2. 通过立即调用类构造函数可以创建单例
+```
+let a = new class{
+  constructor(name){
+   this.name = name
+  }
+  sayName(){
+  return this.name
+  }
+  }('eryue')
+  a.sayName()
+```
+## 访问器属性
+```
+class S {
+  constructor() {
+    // ...
+  }
+  get prop() {
+    console.log('prop------------------')
+    return 'getter';
+  }
+  set prop(value) {
+    console.log('setter: '+value);
+  }
+ get s() {
+
+    console.log('s-------------------------')
+    return 'getter';
+  }
+  set s(value) {
+    console.log('setter: '+value);
+  }
+}
+```
+## 可计算成员名称
+```
+let m = 'sayName'
+class = A{
+ constructor(name){
+   this.name = name
+ }
+ [m](){
+  return this.name
+ }
+}
+```
+## 生成器方法
+```
+class A{
+  *printId(){
+   yield 1;
+   yield 2;
+   yield 3;
+  }
+ }
+ let a = new A();
+ A.printId().next()
+```
+## 静态成员
+* 静态成员是指在方法名或属性名前面加上static关键字,和普通方法不一样的是,static修饰的方法不能在实例中访问,只能在类中直接访问
+```
+class A{
+ constructor(name){
+  this.name = name
+ }
+ static create(name){
+  return new A(name)
+ }
+}
+```
+## 继承与派生类
+```
+class Component{
+ constructor([a,b] = props){
+  this.a = a
+  this.b = b
+ }
+ add(){
+  return this.a + this.b
+ }
+}
+ class T extends Component{
+  constructor(props){
+    super(props)
+  }
+ }
+ let t  = new T([2,3])
+```
+### 关于super使用的几点要求：
+1. 只在可以在派生类中使用super。派生类是指继承自其它类的新类。
+2. 在构造函数中访问this之前要调用 super(),负责初始化this
+
