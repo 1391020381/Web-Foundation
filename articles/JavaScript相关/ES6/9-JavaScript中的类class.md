@@ -148,3 +148,55 @@ class Component{
 1. 只在可以在派生类中使用super。派生类是指继承自其它类的新类。
 2. 在构造函数中访问this之前要调用 super(),负责初始化this
 
+## 类方法遮蔽
+* 我们可以在继承的类中重写父类的方法
+```
+class Component{
+ constructor([a,b] = props){
+  this.a = a
+  this.b = b
+ }
+ add(){
+  return this.a + this.b
+ }
+}
+class T extends Componets{
+ constructor(props){
+   super(props)
+ }
+ add(){
+  return this.a* this.b
+ }
+ }
+```
+## 静态成员继承
+* 父类中静态成员,也可以继承到派生类中。静态成员继承只能通过派生类访问,不能通过派生的实例访问。
+```
+class Component{
+  constructor([a,b] = props){
+   this.a = a
+   this.b =b
+  }
+  static printSum([a,b] = props){
+    return a + b
+  }
+  }
+
+  class T extends Component {
+    constructor(props){
+     super(props)
+    }
+  }
+  T.printSum([2,3])
+```
+## 派生自表达式的类
+## 内建对象的继承
+```
+ class CumstomArray extends Array{
+  let color = new  Array()
+  colors[0] = '1'
+ }
+```
+## Symbol.species
+ * 该用法我还没有接触过，目前只知道在内建对象中使用了该方法，如果在类中调用this.constructor，使用Symbol.species可以让派生类重写返回类型。
+## 在构造函数中使用new.target
