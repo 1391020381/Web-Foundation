@@ -36,4 +36,12 @@
 * 用来处理连接网络的硬件部分。
 ### TCP/IP 通信传输流
 ![TCP/IP 通信传输流](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/TCP%E3%80%81IP%E9%80%9A%E4%BF%A1%E4%BC%A0%E8%BE%93%E6%B5%81.png)
-
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/encapsulate.png)
+* 利用TCP/IP协议族进行网络通信时,会通过分层顺序与对方进行通信。发送端从应用层往下走,接受端则往应用层往上走。
+1. 我们用HTTP举例来说明,首先作为发送端的客户端在应用层(HTTP协议)发出一个想看某个Web页面的HTTP请求。
+2. 接着,为了传输方便,在传输层(TCP协议)把从应用层出收到的数据(HTTP请求报文)进行分割,并在各个报文上打上标记序号及端口号后转发给网络层。
+3. 在网络层(IP协议),增加作为通信目的地的MAC地址后转发给链路层。这样一来,发往网络的通信请求就准备齐全了。
+4. 接受端的服务器在链路层接受到数据,按序往上层发送,一直到应用层。当传输到应用层,才能算真正接受到右客户端发送过来的HTTP请求。
+## 与 HTTP 关系密切的协议 : IP、TCP 和DNS
+### 负责传输的IP协议
+* IP(Internet Protocol) 网际协议位于网络层。
