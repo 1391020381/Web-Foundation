@@ -68,3 +68,9 @@
 * 握手过程中使用了TCP的标志(flag) ——SYN(synchronize) 和ACK(acknowledgement)
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.png)
+### 负责域名解析的 DNS 服务
+* DNS(Domain Name System)服务是HTTP协议一样位于应用层的协议。它提供域名到IP地址之间的解析服务。
+* 计算机既可以被赋予IP地址,也可以被赋予主机名和域名。
+
+
+
