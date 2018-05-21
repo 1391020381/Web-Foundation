@@ -35,3 +35,5 @@
 4. 数据链路层
 * 用来处理连接网络的硬件部分。
 ### TCP/IP 通信传输流
+![TCP/IP 通信传输流](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/TCP%E3%80%81IP%E9%80%9A%E4%BF%A1%E4%BC%A0%E8%BE%93%E6%B5%81.png)
+
