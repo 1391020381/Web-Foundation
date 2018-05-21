@@ -45,3 +45,14 @@
 ### 持久连接
 * 为解决上述 TCP 连接的问题，HTTP/1.1 和一部分的 HTTP/1.0 想出了持久连接（HTTP Persistent Connections，也称为 HTTP keep-alive 或HTTP connection reuse）的方法。持久连接的特点是，只要任意一端没有明确提出断开连接，则保持 TCP 连接状态。
 * 在 HTTP/1.1 中，所有的连接默认都是持久连接，但在 HTTP/1.0 内并未标准化。虽然有一部分服务器通过非标准的手段实现了持久连接但服务器端不一定能够支持持久连接。毫无疑问，除了服务器端，客户端也需要支持持久连接。
+
+* keepalvie timeout
+Httpd守护进程，一般都提供了keep-alive timeout时间设置参数。比如nginx的keepalive_timeout，和Apache的KeepAliveTimeout。这个keepalive_timout时间值意味着：一个http产生的tcp连接在传送完最后一个响应后，还需要hold住keepalive_timeout秒后，才开始关闭这个连接。
+* http keep-alive与tcp keep-alive
+http keep-alive与tcp keep-alive，不是同一回事，意图不一样。http keep-alive是为了让tcp活得更久一点，以便在同一个连接上传送多个http，提高socket的效率。而tcp keep-alive是TCP的一种检测TCP连接状况的保鲜机制。
+
+### 管线化
+* 持久化连接使得多数请求以管线化(pipelining)方式发送成为可能。从前发送请求后需要等待并接受到响应,才能发送下一个请求。管线haul技术出现后,不用等待响应亦可直接发送下一个请求。这样就能做到同时并行发送多个请求,而不需要一个接一个地等待响应了。
+### 使用Cookie的状态管理
+* Cookie 技术通过在请求和响应报文中写入 Cookie 信息来控制客户端的状态。
+* Cookie 会根据从服务器端发送的响应报文内的一个叫做 Set-Cookie 的首部字段信息，通知客户端保存 Cookie。当下次客户端再往该服务器发送请求时，客户端会自动在请求报文中加入 Cookie 值后发送出去。服务器端发现客户端发送过来的 Cookie 后，会去检查究竟是从哪一个客户端发来的连接请求，然后对比服务器上的记录，最后得到之前的状态信息。
