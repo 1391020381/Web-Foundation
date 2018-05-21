@@ -36,6 +36,7 @@
 * 用来处理连接网络的硬件部分。
 ### TCP/IP 通信传输流
 ![TCP/IP 通信传输流](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/TCP%E3%80%81IP%E9%80%9A%E4%BF%A1%E4%BC%A0%E8%BE%93%E6%B5%81.png)
+
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/encapsulate.png)
 * 利用TCP/IP协议族进行网络通信时,会通过分层顺序与对方进行通信。发送端从应用层往下走,接受端则往应用层往上走。
 1. 我们用HTTP举例来说明,首先作为发送端的客户端在应用层(HTTP协议)发出一个想看某个Web页面的HTTP请求。
@@ -65,3 +66,5 @@
 * TCP协议为了更容易传送大数据才把数据分割,而且TCP协议确认数据最终是否送到对方。
 * 为了准确无误地将数据送达目标处，TCP 协议采用了三次握手（three-way handshaking）策略。
 * 握手过程中使用了TCP的标志(flag) ——SYN(synchronize) 和ACK(acknowledgement)
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.png)
