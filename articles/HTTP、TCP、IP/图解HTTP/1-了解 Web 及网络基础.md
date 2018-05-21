@@ -1,4 +1,8 @@
 # 使用 HTTP 协议访问 Web
+* RFC1945 - Hypertext Transfer Protocol -- HTTP/1.0
+* RFC2616 - Hypertext Transfer Protocol -- HTTP/1.1s
+* RFC有一些用来制定 HTTP 协议技术标准的文档，它们被称为
+  RFC（Request for Comments，征求修正意见书
 * 通过发送请求获取服务器资源的Web浏览器等,都可以称为客户端(client)。
 * Web使用一种名为HTTP(HyperText Transfer Protocol,超文本传输协议)的协议作为规范,来完成从客户端到服务端等一系列运作流程。而协议是指规则的约定。可以说,Web是建立在HTTP协议上通信的。
 # HTTP的诞生
@@ -82,4 +86,7 @@
 * URI 就是由某个协议方案表示的资源的定位标识符。协议方案是指访问资源所使用的协议类型名称。
 * URL 是URI的子集
 #### URI 的格式
+* 采用 HTTP 协议时，协议方案就是 http。除此之外，还有 ftp、mailto、telnet、file 等。标准的 URI 协议方案有 30 种左右，
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/URI%E7%9A%84%E6%A0%BC%E5%BC%8F.png)
+
 
