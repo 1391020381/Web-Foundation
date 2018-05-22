@@ -223,5 +223,17 @@
 `形如 If-xxx 这种样式的请求首部字段，都可称为条件请求。服务器接
  收到附带条件的请求后，只有判断指定条件为真时，才会执行请求。`
 
+ ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/If-Match.png)
+
+## If-Modified-Since
+* 如果在  If-Modified-Since字段指定的日期时间后,资源发生了更新,服务器会接受请求。
+* 首部字段 If-Modified-Since，属附带条件之一，它会告知服务器若 If-
+  Modified-Since 字段值早于资源的更新时间，则希望能处理该请求。
+  而在指定 If-Modified-Since 字段值的日期时间之后，如果请求的资源
+  都没有过更新，则返回状态码 304 Not Modified 的响应。
+* If-Modified-Since 用于确认代理或客户端拥有的本地资源的有效性。
+  获取资源的更新日期时间，可通过确认首部字段 Last-Modified 来确
+  定。
+
 
 
