@@ -5,3 +5,4 @@
 * HTTP报文大致可分为报文首部和报文主体两块。两者由最初出现的空行(CR+LF)来划分。通常，不一定要报文主体。
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTP%E6%8A%A5%E6%96%87%E7%BB%93%E6%9E%84.png)
 ## 请求报文及响应报文的结构
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87%E5%8F%8A%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87%E7%9A%84%E7%BB%93%E6%9E%84.png)
