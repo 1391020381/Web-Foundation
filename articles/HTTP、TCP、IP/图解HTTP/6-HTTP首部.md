@@ -1,11 +1,12 @@
 * HTTP协议的请求和响应报文中必定包含HTTP首部。
 # HTTP报文首部
-
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTP%E6%8A%A5%E6%96%87%E7%9A%84%E7%BB%93%E6%9E%84.png)
 ## HTTP请求报文
 
-
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTP%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87.png)
 ## HTTP响应报文
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTP%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87.png)
 # HTTP首部字段
 
 ## HTTTP首部字段传递重要信息
@@ -20,3 +21,15 @@
 ### 若HTTP首部字段重复了会如何
 *  当 HTTP 报文首部中出现了两个或两个以上具有相同首部字段名时会怎么样？这种情况在规范内尚未明确，根据浏览器内部处理逻辑的不同，结果可能并不一致。有些浏览器会优先处理第一次出现的首部字段，而有些则会优先处理最后出现的首部字段。
 ### 4 种 HTTP 首部字段类型
+1. 通用首部字段（General Header Fields）
+* 请求报文和响应报文两方都会使用的首部。
+2. 请求首部字段（Request Header Fields）
+* 从客户端向服务器端发送请求报文时使用的首部。补充了请求的附加内容、客户端信息、响应内容相关优先级等信息。
+3. 响应首部字段（Response Header Fields）
+* 从服务器端向客户端返回响应报文时使用的首部。补充了响应的附加内容，也会要求客户端附加额外的内容信息。
+4. 实体首部字段（Entity Header Fields）
+* 针对请求报文和响应报文的实体部分使用的首部。补充了资源内容更新时间等与实体有关的信息。
+## HTTP/1.1 首部字段一览
+* 通用首部字段
+* 请求首部字段
+* 响应首部字段
