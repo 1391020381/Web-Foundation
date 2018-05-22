@@ -35,13 +35,24 @@
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E9%80%9A%E7%94%A8%E9%A6%96%E9%83%A8%E5%AD%97%E6%AE%B5.png)
 
 * 请求首部字段
-
+* Accept: 用户代理可处理的媒体类型
+* Accept-Charset: 优先的字符集
+* Accept-Encoding:优先的内容编码
+* Host: 请求资源所在的服务器
+* If-Match: 比较实体标记(ETag)
+* If-Modified-Since: 比较资源的更新时间
+* If-None-Match :比较实体标记(与If-Match相反)
+* If-Unmodified-Since :比较资源的更新时间(与If-Modified-Since相反)
+* Referer: 对请求中的URI的原始获取方。
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%AF%B7%E6%B1%82%E9%A6%96%E9%83%A8%E5%AD%97%E6%AE%B5.png)
 
 * 响应首部字段
+* ETag： 资源的匹配信息
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E5%93%8D%E5%BA%94%E9%A6%96%E9%83%A8%E5%AD%97%E6%AE%B5.png)
 
 * 实体首部字段
-
+* Content-length: 实体主体的大小(单位字节)
+* Expires :  实体主体过期的日期时间
+* Last-Mofified: 资源的最后修改日期时间
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E5%AE%9E%E4%BD%93%E9%A6%96%E9%83%A8.png)
