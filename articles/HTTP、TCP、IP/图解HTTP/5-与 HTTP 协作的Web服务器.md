@@ -26,8 +26,11 @@
 * 转发请求或响应时，不对报文做任何加工的代理类型被称为透明代理(Transparent Proxy)。反之，对报文内容进行加工的代理被称为非透明代理。
 ## 网关
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP、TCP、IP/img/网关.png)
 
 ## 隧道
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E9%9A%A7%E9%81%93.png)
 
 ## 保存资源的缓存
 
