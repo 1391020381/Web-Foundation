@@ -234,6 +234,15 @@
 * If-Modified-Since 用于确认代理或客户端拥有的本地资源的有效性。
   获取资源的更新日期时间，可通过确认首部字段 Last-Modified 来确
   定。
+  ## If-None-Match
+  * 首部字段 If-None-Match 属于附带条件之一。它和首部字段 If-Match
+作用相反。用于指定 If-None-Match 字段值的实体标记（ETag）值与
+请求资源的 ETag 不一致时，它就告知服务器处理该请求。
+* 在 GET 或 HEAD 方法中使用首部字段 If-None-Match 可获取最新的资
+源。因此，这与使用首部字段 If-Modified-Since 时有些类似。
+## If-Range
+1. If-Range字段值若是跟ETag值或更新的日期时间匹配一致,那么就作为范围请求处理。
+
 
 
 
