@@ -122,3 +122,10 @@
 * 从字面意思上很容易把 no-cache 误解成为不缓存，但事实上 no-cache 代表不缓
   存过期的资源，缓存会向源服务器进行有效期确认后处理资源，也许称为 do-not-
   serve-from-cache-without-revalidation 更合适。no-store 才是真正地不进行缓存
+  ### Connection
+  1. Connection 首部字段具备如下两个作用
+    * 控制不再转发给代理的首部字段
+        * Connection: 不再转发的首部字段名
+    * 管理持久连接
+        * Connection: close
+    *
