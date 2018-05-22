@@ -42,5 +42,5 @@
 
 ## 客户端的缓存
 
-
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%BC%93%E5%AD%98.png)
 
