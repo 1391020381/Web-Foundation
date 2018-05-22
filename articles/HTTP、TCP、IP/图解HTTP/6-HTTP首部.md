@@ -151,4 +151,70 @@
 * 首部字段 Trailer 会事先说明在报文主体后记录了哪些首部字段。该
   首部字段可应用在 HTTP/1.1 版本分块传输编码时。
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Trailer.png)
+
+###  Transfer-Encoding
+* 首部字段 Transfer-Encoding 规定了传输报文主体时采用的编码方式。
+### Upgrade
+* 首部字段 Upgrade 用于检测 HTTP 协议及其他协议是否可使用更高的
+  版本进行通信，其参数值可以用来指定一个完全不同的通信协议。
+### Via
+* 使用首部字段 Via 是为了追踪客户端与服务器之间的请求和响应报文
+  的传输路径。
+* 报文经过代理或网关时，会先在首部字段 Via 中附加该服务器的信
+  息，然后再进行转发。这个做法和 traceroute 及电子邮件的 Received
+  首部的工作机制很类似。
+* 首部字段 Via 不仅用于追踪报文的转发，还可避免请求回环的发生。
+  所以必须在经过代理时附加该首部字段内容。
+### Warning
+* HTTP/1.1 的 Warning 首部是从 HTTP/1.0 的响应首部（Retry-After）演
+  变过来的。该首部通常会告知用户一些与缓存相关的问题的警告。
+# 请求首部字段
+* 请求首部字段是从客户端往服务器端发送请求报文中所使用的字段，
+  用于补充请求的附加信息、客户端信息、对响应内容相关的优先级等
+  内容。
+## Accept
+* Accept 首部字段可通知服务器，用户代理能够处理的媒体类型及媒体
+  类型的相对优先级。可使用 type/subtype 这种形式，一次指定多种媒
+  体类型。
+* 常见媒体类型
+    * 文本文件
+        * text/html，text/plain, text/css
+        * application/xhtml+xml, application/xml
+    * 图片文件
+        * image/jpeg,image/gif,image/png
+    * 视频文件
+        * video/mpeg, video/quicktime
+    *  应用程序使用的二进制文件
+        *  application/octet-stream, application/zip
+## Accept-Charset
+   * Accept-Charset 首部字段可用来通知服务器用户代理支持的字符集及
+      字符集的相对优先顺序。另外，可一次性指定多种字符集。与首部字
+      段 Accept 相同的是可用权重 q 值来表示相对优先级。
+   * 该首部字段应用于内容协商机制的服务器驱动协商。
+## Accept-Encoding
+1. gzip
+   * 由文件压缩程序 gzip（GNU zip）生成的编码格式
+   （RFC1952），采用 Lempel-Ziv 算法（LZ77）及 32 位循环冗余
+   校验（Cyclic Redundancy Check，通称 CRC）。
+2. compress
+   * 由 UNIX 文件压缩程序 compress 生成的编码格式，采用 Lempel-
+   Ziv-Welch 算法（LZW）。
+3. deflate
+   * 组合使用 zlib 格式（RFC1950）及由 deflate 压缩算法
+   （RFC1951）生成的编码格式。
+4.  identity
+   * 不执行压缩或不会变化的默认编码格式
+* 采用权重 q 值来表示相对优先级，这点与首部字段 Accept 相同。另
+   外，也可使用星号（*）作为通配符，指定任意的编码格式。
+## Accept-Language
+## Authorization
+* 首部字段 Authorization 是用来告知服务器，用户代理的认证信息（证
+  书值）。通常，想要通过服务器认证的用户代理会在接收到返回的
+  401 状态码响应后，把首部字段 Authorization 加入请求中。共用缓存
+  在接收到含有 Authorization 首部字段的请求时的操作处理会略有差
+  异。
+  ## Expect
+  ## From
+  ## Host
 
