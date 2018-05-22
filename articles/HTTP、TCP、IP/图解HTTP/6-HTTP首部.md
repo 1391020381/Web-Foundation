@@ -56,3 +56,36 @@
 * Expires :  实体主体过期的日期时间
 * Last-Mofified: 资源的最后修改日期时间
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E5%AE%9E%E4%BD%93%E9%A6%96%E9%83%A8.png)
+
+## 非HTTP/1.1首部字段
+* 在 HTTP 协议通信交互中使用到的首部字段，不限于 RFC2616 中定义的 47 种首部字段。还有 Cookie、Set-Cookie 和 Content-Disposition等在其他 RFC 中定义的首部字段，它们的使用频率也很高。
+* 这些非正式的首部字段统一归纳在 RFC4229 HTTP Header Field Registrations 中。
+## End-to-end 首部和 Hop-by-hop 首部
+* HTTP 首部字段将定义成缓存代理和非缓存代理的行为，分成 2 种类型。
+1. 端到端首部（End-to-end Header）
+   * 分在此类别中的首部会转发给请求 / 响应对应的最终接收目标，且必
+   须保存在由缓存生成的响应中，另外规定它必须被转发。
+2. 逐跳首部（Hop-by-hop Header）
+   * 分在此类别中的首部只对单次转发有效，会因通过缓存或代理而不再
+   转发。HTTP/1.1 和之后版本中，如果要使用 hop-by-hop 首部，需提
+   供 Connection 首部字段。
+3. 下面列举了 HTTP/1.1 中的逐跳首部字段。除这 8 个首部字段之外，
+   其他所有字段都属于端到端首部。
+  * Connection
+  * Keep-Alive
+  * Proxy-Authenticate
+  * Proxy-Authorization
+  *  Trailer
+  * TE
+  * Transfer-Encoding
+  * Upgrade
+# HTTP/1.1 通用首部字段
+* 通用首部字段是指，请求报文和响应报文双方都会使用的首部。
+## Cache-Control
+* 通过指定首部字段 Cache-Control 的指令，就能操作缓存的工作机制。
+* 指令的参数是可选的，多个指令之间通过“,”分隔。首部字段 Cache-
+  Control 的指令可用于请求及响应时。
+* Cache-Control: private, max-age=0, no-cache
+### Cache-Control 指令一览
+  * 可用的指令按请求和响应分类如下所示。
+
