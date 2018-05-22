@@ -218,3 +218,10 @@
   ## From
   ## Host
 
+  ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Host.png)
+## If-Match
+`形如 If-xxx 这种样式的请求首部字段，都可称为条件请求。服务器接
+ 收到附带条件的请求后，只有判断指定条件为真时，才会执行请求。`
+
+
+
