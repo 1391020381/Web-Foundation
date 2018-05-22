@@ -243,6 +243,11 @@
 ## If-Range
 1. If-Range字段值若是跟ETag值或更新的日期时间匹配一致,那么就作为范围请求处理。
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/If-Range.png)
 
+2. 如果不使用首部字段If-Range则需要进行两次处理
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Range.png)
 
 
