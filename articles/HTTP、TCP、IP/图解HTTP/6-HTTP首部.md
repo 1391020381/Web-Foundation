@@ -293,6 +293,36 @@ Age。
 配合状态码 503 Service Unavailable 响应，或 3xx Redirect 响应一起使用。
 ## Server
 ## Vary
-
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Vary.png)
 ## WWW-Authenticate
+* WWW-Authenticate: Basic realm="Usagidesign Auth"
+* 首部字段 WWW-Authenticate用于HTTP访问认证。它会告知客户端适用于访问请求URI所指定资源的认证方案(Basic或是Digest)和带参数提示的质询(challenge)。状态码 401 Unauthorized 响应中，肯定带有首部字段 WWW-Authenticate。
+# 实体首部字段
+* 实体首部字段是包含在请求报文和响应报文中的实体部分所使用的首部,用于补充内容的更新时间等于实体相关的信息
 
+## Allow
+## Content-Encoding
+## Content-Length
+## Content-Location
+* 首部字段 Content-Location 给出与报文主体部分相对应的 URI。和首
+部字段 Location 不同，Content-Location 表示的是报文主体返回资源对
+应的 URI。
+## Content-MD5
+* 首部字段 Content-MD5 是一串由 MD5 算法生成的值，其目的在于检
+查报文主体在传输过程中是否保持完整，以及确认传输到达。
+## Content-Range
+* 针对范围访问,返回响应时使用的首部字段Content-Range，能告知客户端作为响应返回的实体的哪个部分符合范围请求。字段值以字节为单位。
+* 表示当前发送部分及整个实体大小。
+## Content-Type
+
+## Expires
+* 首部字段Expires会将资源失效的日期告知客户端。缓存服务器在接受到含有首部字段Expires的响应后,会以缓存来应答请求,在Expires字段值指定的
+时间之前,响应的副本会一直被保存。当超过指定的时间后,缓存服务器在请求发送过来时,会转向源服务器请求资源。
+* `当首部字段 Cache-Control 有指定max-age指令时,比起首部字段 Expries，会优先处理 max-age指令。`
+
+## Last-Modified
+* 首部字段Last-Modified指明资源最终修改的时间。一般来说,这个值就是Request-URI 指定资源被修改的时间。但类似使用 CGI 脚本进
+行动态数据处理时，该值有可能会变成数据最终修改时的时间。
+# 为Cookie服务的首部字段
+* Cookie的工作机制是用户识别及状态管理。Web网站为了管理用户的状态会通过Web浏览器,把一些数据临时写入用户的计算机内。接着当用户访问该Web网站时,可通过通信方式取回之前发放的Cookie
+* 调用 Cookie 时，由于可校验 Cookie 的有效期，以及发送方的域、路径、协议等信息，所以正规发布的 Cookie 内的数据不会因来自其他Web 站点和攻击者的攻击而泄露。
