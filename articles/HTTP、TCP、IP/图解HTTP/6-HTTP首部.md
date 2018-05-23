@@ -249,5 +249,50 @@
 
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Range.png)
+## If-Unmodified-Since
+* 首部字段If-Unmodified-Since和首部字段If-Modified-Since的作用相反。它的作用是告知服务器,指定的请求资源只有在字段值内指定的日期时间之后,为发生更新的情况下,才能处理请求。如果在指定的日期时间后发生了更新,则以状态码 412 Precondition Failed 作为响应返回。
+## Max-Forwards
+## Proxy-Authorization 
+* Proxy-Authorization: Basic dGlwOjkpNLAGfFY5
+* 接收到代理服务器发来的认证质询时,客户端会发送包含首部字段Proxy-Authorization的请求,以告知服务器认证所需要的信息。
+* 这个行为是与客户端和服务器之间的HTTP访问认证相类似的,不同之处在于,认证行为发生在客户端与代理之间。客户端与服务器之间的认证,使用首部字段Authorization可起到相同的作用。
+## Range
+## Referer
+* 首部字段Referer会告知服务器请求的原始资源的URI
+## TE
+* 首部字段TE会告知服务器客户端能够处理响应的传输编码方式及相对优先级。它和首部字段Accept-Encoding的功能很相像，但是用于传输编码。
+##  User-Agent
+* 首部字段User-Agent会将创建请求的浏览器和用户代理名称等信息传达给服务器。
+# 响应首部字段
+* 响应首部字段是由服务器向客户端返回响应报文中所使用的字段,用于补充响应的附加信息、服务器信息、以及对客户端的附加要求等。
+## Accept-Ranges
+* 首部字段Accept-Range是用来告知客户端服务器是否能处理范围请求,以指定获取服务器某个部分的资源。
+## Age
+* 首部字段 Age 能告知客户端，源服务器在多久前创建了响应。字段值
+的单位为秒。
+* 若创建该响应的服务器是缓存服务器，Age 值是指缓存后的响应再次
+发起认证到认证完成的时间值。代理创建响应时必须加上首部字段
+Age。
+## ETag
+* 首部字段ETag能告知客户端实体标识。它是一种可将资源以字符串形式做唯一标识的方式。服务器会为每份资源分配对应的ETag值。
+* 另外,当资源更新时,ETag值也需要更新。生成ETag值时,并没有统一的算法规则,而仅仅是有服务器来分配。
+### 强 ETag 值和弱 Tag 值
+* 强 ETag 值，不论实体发生多么细微的变化都会改变其值。
+* 弱 ETag 值只用于提示资源是否相同。只有资源发生了根本改变，产
+生差异时才会改变 ETag 值。这时，会在字段值最开始处附加 W/。
+* ETag: W/"usagi-1234"
+## Location
+* 使用首部字段Location可以将响应接受方引导值某个与请求URI位置不同的资源。
+* 基本上,该字段会配合3XX:Redirection的响应,提供重定向的URI
+* 几乎所有的浏览器在接收到包含首部字段 Location 的响应后，都会强
+制性地尝试对已提示的重定向资源的访问。
+## Proxy-Authenticate
+* 首部字段Proxy-Authenticate会把由代理服务器所要求的认证信息发送给客户端。
+## Retry-After
+* 首部字段 Retry-After告知客户端应该多久之后再次发送请求。主要
+配合状态码 503 Service Unavailable 响应，或 3xx Redirect 响应一起使用。
+## Server
+## Vary
 
+## WWW-Authenticate
 
