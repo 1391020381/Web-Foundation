@@ -7,4 +7,5 @@
  1. 定高,定宽百分比
  2. flex
  3. Media Query(媒体查询)  
- 4. rem 
+ 4. rem(js/rem适配的原理,注意设计稿的大小)
+
