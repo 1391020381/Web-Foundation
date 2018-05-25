@@ -55,3 +55,8 @@ JSON、XML、HTML 或图片等任意格式的数据。
 
 # 期盼已久的 HTTP/2.0       
 * HTTP/2.0 在 2014 年 11 月实现标准化。
+* HTTP/2.0特点
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTP2%E7%9A%84%E7%89%B9%E7%82%B9.png)
+
+# WebDAV 
