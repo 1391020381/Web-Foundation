@@ -1,0 +1,2 @@
+* [浅谈浏览器 http 的缓存机制](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651553545&idx=2&sn=71efd68546b1c34485c0133053d4c693&chksm=8025a8c8b75221dedd749d7c3fab852850198384b8dfee2f57e3986cd27fdd674a6986e96d8b&mpshare=1&scene=23&srcid=0122KGTiwUa4AI15ATCbYQ2x#rd)
+* [浏览器HTTP缓存机制](https://juejin.im/post/5a673af06fb9a01c927ed880?utm_source=gold_browser_extension)
