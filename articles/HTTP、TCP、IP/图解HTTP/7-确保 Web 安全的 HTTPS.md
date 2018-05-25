@@ -71,3 +71,19 @@ Authority）和其相关机关颁发的公开密钥证书。
 ### 认证机构信誉第一
 ### 由自认证机构颁发的证书称为自签名证书
 ## HTTPS 的安全通信机制
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTPS%E7%9A%84%E9%80%9A%E4%BF%A1%E6%AD%A5%E9%AA%A4.png)
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTPS%E7%9A%84%E9%80%9A%E4%BF%A1%E6%AD%A5%E9%AA%A4%E8%AF%A6%E8%A7%A3.png)
+
+### HTTPS比HTTP要慢2到100倍
+* SSL 的慢分两种。一种是指通信慢。另一种是指由于大量消耗CPU 及内存等资源，导致处理速度变慢。
+    * 和使用 HTTP 相比，网络负载可能会变慢 2 到 100 倍。除去和TCP 连接、发送 HTTP 请求 • 响应以外，还必须进行 SSL 通信，因此整体处理通信量不可避免会增加。
+    * 另一点是 SSL 必须进行加密处理。在服务器和客户端都需要进行
+加密和解密的运算处理。因此从结果上讲，比起 HTTP 会更多地
+消耗服务器和客户端的硬件资源，导致负载增强。
+### 为什么不一直使用 HTTPS
+* 因为与纯文本通信相比，加密通信会消耗更多的
+CPU 及内存资源。如果每次通信都加密，会消耗相当多的资源，平
+摊到一台计算机上时，能够处理的请求数量必定也会随之减少
+* 想要节约购买证书的开销
