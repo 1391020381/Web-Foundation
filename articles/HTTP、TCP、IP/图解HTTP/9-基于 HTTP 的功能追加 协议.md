@@ -41,3 +41,17 @@ JSON、XML、HTML 或图片等任意格式的数据。
         * 支持由服务器向客户端推送数据的推送功能。这样，服务器可直接发送数据，而不必等待客户端的请求
      * 减少通信量
         *   只要建立起 WebSocket 连接，就希望一直保持连接状态。和 HTTP 相比，不但每次连接时的总开销减少，而且由于 WebSocket 的首部信息很小，通信量也相应减少了。 
+
+   * 为了实现 WebSocket 通信，在 HTTP 连接建立之后，需要完成一次“握手”（Handshaking）的步骤。
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/WebSocket%E6%8F%A1%E6%89%8B%E5%93%8D%E5%BA%94.png)
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/WebSocket%E6%8F%A1%E6%89%8B%E8%AF%B7%E6%B1%82.png)
+
+
+
+* JavaScript调用WebSocket
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/JavaScript%20%E5%8F%AF%E8%B0%83%E7%94%A8%E2%80%9CThe%20WebSocket.png)
+
+# 期盼已久的 HTTP/2.0       
+* HTTP/2.0 在 2014 年 11 月实现标准化。
