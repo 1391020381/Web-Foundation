@@ -66,3 +66,8 @@ Authority）和其相关机关颁发的公开密钥证书。
  
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%AF%81%E6%98%8E%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E6%AD%A3%E7%A1%AE%E6%80%A7%E7%9A%84%E8%AF%81%E4%B9%A6.png)
 
+#### 可证明组织真实性的 EV SSL 证书
+### 用以确认客户端的客户端证书
+### 认证机构信誉第一
+### 由自认证机构颁发的证书称为自签名证书
+## HTTPS 的安全通信机制
