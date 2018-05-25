@@ -33,6 +33,7 @@ SSL 不仅提供加密处理，而且还使用了一种被称为证书的手段�
 ## HTTPS是身披SSL外壳的HTTP
 * HTTPS并非是应用层的一种新协议。只是HTTP通信接口部分用SSL(Secure Socker Layer) 和TLS(Transport Layer Security)协议代替而已。
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/SSL.png)
 
 ## 相互交换密钥的公开密钥的加密技术
 * SSL采用一种叫做公开密钥加密(Public-key-cryptography)的加密处理方式。
@@ -58,6 +59,10 @@ Authority）和其相关机关颁发的公开密钥证书。
 2. 数字证书认证机构在判明提出申请者的身份之后,会对已申请的公开密钥做数字签名,然后分配这个已签名的公开密钥,并将该公开密钥放到公钥证书后绑定在一起。
 3. 服务器会将这份有数字证书认证机构颁发的公钥证书发送给客户端,以进行公开密钥方式通信。公钥证书也叫做数字证书或直接称为证书。
 4. 接到证书的客户端可使用数字证书认证机构的公开密钥,对那张证书上数字签名进行验证,一旦验证通过,客户端便可明确两件事：1. 认证服务器的公开密钥的是真实有效的数字证书认证机构。2. 服务器的公开密钥是值得信赖的。
- 
 
+* 此处认证机关的公开密钥必须安全地转交给客户端。使用通信方式
+时，如何安全转交是一件很困难的事，因此，多数浏览器开发商发布
+版本时，会事先在内部植入常用认证机关的公开密钥。
+ 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%AF%81%E6%98%8E%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E6%AD%A3%E7%A1%AE%E6%80%A7%E7%9A%84%E8%AF%81%E4%B9%A6.png)
 
