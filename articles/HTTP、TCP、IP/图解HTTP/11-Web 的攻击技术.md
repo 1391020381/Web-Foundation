@@ -42,12 +42,20 @@
 * XSS 是攻击者利用预先设置的陷阱触发的被动攻击
 * 跨站脚本攻击属于被动攻击模式，因此攻击者会事先布置好用于
 攻击的陷阱。     
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB%E6%A1%88%E4%BE%8B.png)
+
 ## SQL 注入攻击
 * 非法查看或篡改数据库内的数据
 * 规避认证
 * 执行和数据库服务器业务关联的程序等
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/SQL%20%E6%B3%A8%E5%85%A5%E6%94%BB%E5%87%BB%E7%9A%84%E6%93%8D%E4%BD%9C%E7%A4%BA%E4%BE%8B.png)
+
 ## OS命令注入的攻击
 * OS命令注入攻击(OS Command Injection)是指通过Web应用,执行非法的操作系统命令达到攻击的目的。只要在能调用Shell函数的地方就有被攻击的风险。
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/OS%20%E6%B3%A8%E5%85%A5%E6%94%BB%E5%87%BB%E7%9A%84%E6%94%BB%E5%87%BB%E6%A1%88%E4%BE%8B.png)
 
 ## HTTP 首部注入攻击
 * HTTP首部注入攻击(HTTP Header Injection) 是指攻击者通过在响应首部字段内插入换行,添加任意响应首部或主体内容的一种攻击。属于被动攻击。
@@ -55,3 +63,5 @@
      * 设置任何 Cookie 信息
      * 重定向至任意 URL
       * 显示任意的主体（HTTP 响应截断攻击）
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTP%20%E9%A6%96%E9%83%A8%E6%B3%A8%E5%85%A5%E6%94%BB%E5%87%BB%E7%A4%BA%E4%BE%8B.png)
