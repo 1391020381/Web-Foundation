@@ -7,6 +7,10 @@
 * 在HTTP请求报文内加载攻击代码,就能发起对Web应用的攻击。通过URL查询字段或表单、HTTP首部、Cookie等途径把攻击代码传入,若这时Web应用存在安全漏洞,那内部信息就会遭到窃取,或被攻击者拿到管理权限。
  ### 对Web应用的攻击模式由以下两种。
 1. 主动攻击
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E4%B8%BB%E5%8A%A8%E6%94%BB%E5%87%BB.png)
+
+
 2.  被动攻击
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%A2%AB%E5%8A%A8%E6%94%BB%E5%87%BB.png)
@@ -19,4 +23,26 @@
 * 利用用户的身份攻击企业内部网络
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E5%88%A9%E7%94%A8%E8%A2%AB%E5%8A%A8%E6%94%BB%E5%87%BB%E5%AF%B9%E4%BC%81%E4%B8%9A%E5%86%85%E7%BD%91%E5%8F%91%E5%8A%A8%E6%94%BB%E5%87%BB.png)
-        
+
+# 因输出值转义不完全引发的安全问题
+* 实施Web应用的安全对策可大致分为以下两部分:
+    * 客户端的验证
+    * Web应用端(服务器端)的验证
+        * 输入值验证
+        * 输出值的转入
+  * 多数情况下采用JavaScript在客户端验证数据。可是在客户端允许篡
+改数据或关闭 JavaScript，不适合将JavaScript验证作为安全的防范对策。保留客户端验证只是为了尽早地辨识输入错误,起到提高UI体验的作用。
+   ## 跨站脚本攻击
+* 跨站脚本攻击(Cross-Site Scripting, XSS) 是指通过存在安全漏洞的Web网站注册用户的   浏览器内运行非法的HTML标签或JavaScript进行的一种攻击。动态创建的HTML部分有可能隐藏着安全漏洞。就这样,攻击者编写脚本设下陷阱,用户在自己的浏览器上运行时,一不小心就会受到被动攻击。 
+* 跨站脚本攻击有可能造成以下影响
+    * 利用虚假输入表单骗取用户个人信息。
+    * 利用脚本窃取用户的 Cookie 值，被害者在不知情的情况下，
+    * 帮助攻击者发送恶意请求。
+    * 显示伪造的文章或图片。     
+* XSS 是攻击者利用预先设置的陷阱触发的被动攻击
+* 跨站脚本攻击属于被动攻击模式，因此攻击者会事先布置好用于
+攻击的陷阱。     
+## SQL 注入攻击
+* 非法查看或篡改数据库内的数据
+* 规避认证
+* 执行和数据库服务器业务关联的程序等
