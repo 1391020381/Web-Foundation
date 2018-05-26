@@ -120,12 +120,17 @@
 击（Session Fixation）攻击会强制用户使用攻击者指定的会话 ID，属
 于被动攻击。
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E4%BC%9A%E8%AF%9D%E5%9B%BA%E5%AE%9A%E6%94%BB%E5%87%BB%E6%A1%88%E4%BE%8B.png)
+
 6. 跨站点请求伪造
 * 跨站点请求伪造(Cross-Site Request Forgeries ,CSRF)攻击是指攻击者通过设置好的陷阱，强制对已完成认证的用户进行非预期的个人信息或设定信息等某系状态更新，属于被动攻击。
 * 跨站点请求伪造有可能会造成以下等影响。
     * 利用已通过认证的用户权限更新设定信息等
     * 利用已通过认证的用户权限购买商品
     * 利用已通过认证的用户权限在留言板上发表言论
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E8%B7%A8%E7%AB%99%E7%82%B9%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0%E7%9A%84%E6%94%BB%E5%87%BB%E6%A1%88%E4%BE%8B.png)
+
 7. 其他安全漏洞
     * 密码破解
     * 密码破解有以下两种手段。
@@ -147,3 +152,7 @@ Redressing）。
     * 主要有以下两种 DoS 攻击方式。
         * 集中利用访问请求造成资源过载，资源用尽的同时，实际上服务也就呈停止状态。
         *  通过攻击安全漏洞使服务停止。
+ * 后门程序
+    * 后门程序（Backdoor）是指开发设置的隐藏入口，可不按正常步骤使
+用受限功能。利用后门程序就能够使用原本受限制的功能。
+
