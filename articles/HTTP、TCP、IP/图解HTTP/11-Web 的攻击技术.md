@@ -65,3 +65,6 @@
       * 显示任意的主体（HTTP 响应截断攻击）
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/HTTP%20%E9%A6%96%E9%83%A8%E6%B3%A8%E5%85%A5%E6%94%BB%E5%87%BB%E7%A4%BA%E4%BE%8B.png)
+
+### HTTP 响应截断攻击
+* HTTP 响应截断攻击是用在HTTP首部注入的一种攻击。攻击顺序相同,但是要将两个%0D%0A%0D%0A并排插入字符串后发送。利用这两个连续的换行就可作出HTTP首部与主体分隔所需的空行了,这样就能显示伪造的主体,达到攻击的目的。这样的攻击叫做HTTP响应截断攻击。
