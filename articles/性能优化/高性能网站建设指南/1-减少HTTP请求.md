@@ -10,4 +10,7 @@ HTML的MAP标签实现。
 * `图片地图中的图片必须是连续的,而CSS Sprites则没有这个限制。`
 # 内联图片
 * 通过使用data:url模式可以在Web页面中包含图片但无需任何额外的HTTP请求。
+* data:url模式在1995年被首次提议。规范(http://tools.ietf/html/rfc2397)对它的描述为：允许将小块的数据内联为   立即数。数据就在其URL
+
 # Iconfont
+# 合并脚本和样式
