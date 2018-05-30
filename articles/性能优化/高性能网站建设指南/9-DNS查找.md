@@ -1,5 +1,9 @@
 #   DNS 缓存和TTL<存活时间  Time-to-live>
 
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/img/%E4%BB%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8BDNS%E7%BC%93%E5%AD%98.png)
+
 # 影响DNS缓存的因素
 * 首先,服务器可以表明记录可以被缓存多久。查找返回的DNS记录包含了一个存活时间(Time-to-live,TTL)。
 该值告诉客户端可以对该记录缓存多久。
