@@ -75,6 +75,18 @@ linear-gradient(white 1px, transparent 0),
 linear-gradient(90deg, white 1px, transparent 0);
 background-size: 30px 30px;                
     }
+    .radial-gradient-1{
+        background: #655;
+        background-image: radial-gradient(tan 30%,transparent 0);
+        background-size:30px 30px;
+    }
+    .radial-gradient-2{
+        background: #655;
+background-image: radial-gradient(tan 20%, transparent 0),
+                  radial-gradient(tan 20%, transparent 0);
+background-size: 30px 30px;
+background-position: 0 0, 15px 15px;
+    }
     </style>
 </head>
 <body>
@@ -91,5 +103,7 @@ background-size: 30px 30px;
     <span class="btn linear-gradient-7"></span>
     <span class="btn linear-gradient-8"></span>
     <span class="btn linear-gradient-9"></span>
+    <span class="btn radial-gradient-1"></span>
+    <span class="btn radial-gradient-2"></span>
 </body>
 </html>
