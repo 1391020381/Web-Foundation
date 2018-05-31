@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景与边框</title>
+    <style>
+   * {
+       margin:0;
+       padding:0;
+   }
+    .btn{
+    display: inline-block;
+    margin:20px;
+    width:200px;
+    height:100px;
+    }
+    .box-shadow-1{
+    background: yellowgreen;
+    box-shadow: 0 0 0 10px #655,0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, 0.6)
+    }
+    .outline{
+        background: yellowgreen;
+        outline: 1px dashed deeppink;
+        outline-offset: -10px;
+    }
+    .other{
+        background: tan;
+        border-radius: .8em;
+        padding:1em;
+        box-shadow: 0 0 0  .6em #655;
+        outline: 1em solid #655;
+    }
+    .linear-gradient-1{
+        background:linear-gradient(#fb3 20%,#58a 50%,yellowgreen 80%)
+    }
+    .linear-gradient-2{
+        background: linear-gradient(#fb3 30%,#58a 0);
+        background-size:100% 30px;
+    }
+    .linear-gradient-3{
+        background: linear-gradient(to right,#fb3 50%,#58a 0);
+        background-size:30px 100%;
+    }
+    .linear-gradient-4{
+        background: linear-gradient(45deg,
+#fb3 25%, #58a 0, #58a 50%,
+#fb3 0, #fb3 75%, #58a 0);
+background-size: 42.426406871px 42.426406871px;
+    }
+    .linear-gradient-5{
+        background: repeating-linear-gradient(45deg,
+#fb3, #fb3 15px, #58a 0, #58a 30px);
+    }
+    .linear-gradient-6{
+        background: repeating-linear-gradient(30deg,#79b,#79b 30px,#58a 0,#58a 60px)
+    }
+    .linear-gradient-7{
+        background: repeating-linear-gradient(60deg,#fb3 0 15px,#58a 0 30px)
+    }
+    </style>
+</head>
+<body>
+    <span class='btn box-shadow-1'></span>
+    <span class="btn outline"></span>
+
+    <span class="btn other"></span>
+    <span class="btn linear-gradient-1"></span>
+    <span class="btn linear-gradient-2"></span>
+    <span class="btn linear-gradient-3"></span>
+    <span class="btn linear-gradient-4"></span>
+    <span class="btn linear-gradient-5"></span>
+    <span class="btn linear-gradient-6"></span>
+    <span class="btn linear-gradient-7"></span>
+</body>
+</html>
