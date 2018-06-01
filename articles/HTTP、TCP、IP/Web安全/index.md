@@ -1,2 +1,3 @@
 * [Web 安全之 XSS](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651554237&idx=2&sn=0e372402ca8790820b13412a8d07579e&chksm=8025567cb752df6a64e5cb320a7efa0f808b93a0ee750985f2d04b3a678bffbb4177a12d0a3b&mpshare=1&scene=23&srcid=0527Ovy3hmppOf8SdaXw8lFU#rd)
 * [Web 安全 英文](https://auth0.com/blog/common-threats-in-web-app-security/)
+* [title="AJAX请求真的不安全么？谈谈Web安全与AJAX的关系。AJAX请求真的不安全么？谈谈Web安全与AJAX的关系"](http://www.dailichun.com/2018/01/04/security_ajaxissafeornot.html)

@@ -1,0 +1,1 @@
+* [ajax跨域，这应该是最全的解决方案了](http://www.dailichun.com/2017/03/22/ajaxCrossDomainSolution.html)
