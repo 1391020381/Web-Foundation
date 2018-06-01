@@ -21,3 +21,5 @@
   # 协商缓存
 * 协商缓存就是强制缓存失效后，浏览器携带缓存标识向服务器发起请求,由服务器根据缓存标识决定是否使用缓存的过程。
 * 控制协商缓存的字段分别有: Last-Modified / If -Modified-Since 和Etag  / If -None-Match ，其中 Etag /If -None-Match的优先级比 Last-Modified / If-Modified-Since高
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Last-Modified%20%20If-Modified-Since.png)
