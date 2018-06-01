@@ -23,3 +23,9 @@
 * 控制协商缓存的字段分别有: Last-Modified / If -Modified-Since 和Etag  / If -None-Match ，其中 Etag /If -None-Match的优先级比 Last-Modified / If-Modified-Since高
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Last-Modified%20%20If-Modified-Since.png)
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/Etag%20%20If-None-Match.png)
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/HTTP%E3%80%81TCP%E3%80%81IP/img/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98-%E6%80%BB%E7%BB%93.png)
