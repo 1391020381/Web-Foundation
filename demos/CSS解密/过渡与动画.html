@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过渡与动画</title>
+    <style>
+    * {
+        margin:0;
+        padding:0;
+    }
+    .btn{
+        margin:0 auto;
+        display: inline-block;
+        width:50px;
+        height: 50px;
+        border-radius: 25px;
+        background: yellowgreen;
+    }
+    @keyframes bounce{
+        60%,80%,to{
+            transform:translateY(400px);
+            animation-timing-function:cubic-bezier(.1,.25,1,.25);
+        }
+        70%{transform: translateY(300px);}
+        90%{transform:translateY(360px);}
+    }
+    .ball-1{
+     animation: bounce 3s ease-in;
+    }
+    </style>
+</head>
+<body>
+    <span  class="btn ball-1"></span>
+</body>
+</html>
