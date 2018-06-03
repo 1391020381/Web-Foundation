@@ -101,3 +101,10 @@
 * default-src限制全局
 * 指定资源类型
 * [CSP](https://developer.mozilla.org/zh-CN/docs/Glossary/CSP)
+# NGINX
+* ./nginx.exe 启动
+* nginx -s reload|reopen |stop |quit  重新加载配置  重启  停止  退出nginx
+* 代理配置 、代理缓存
+* HTTPS解析
+* 使用HTTP部署HTTP服务
+* HTTP2的优势和Nginx配置HTTP2
