@@ -67,4 +67,37 @@
 # 静态资源打包发布的时候添加版本号
 * 一般的html文件一般不缓存或者缓存时间比较短,如果html缓存时间过长,当服务器的资源修改后,浏览器还是用的原来请求返回的东西,而达不到更新的目的。
 * 浏览器在解析html的时候,会根据 js  img  csslink的  src的URL来发送请求。当html都不更新了,里面的其他资源也不会更新了。
-* 当html的不缓存或者缓存时间比较短的话,就会请求到新的html,并会解析里面的其他资源。当里面的其他资源的URL加了版本号,就相当于一个新的请求。从而达到更新的目的。    
+* 当html的不缓存或者缓存时间比较短的话,就会请求到新的html,并会解析里面的其他资源。当里面的其他资源的URL加了版本号,就相当于一个新的请求。从而达到更新的目的。  
+# 缓存验证Last-Modified和Etag的使用  
+* Cache-Control:max-age=2000,nocache  使用缓存但下次要先验证缓存是否有效
+* 服务器可以获取相应的请求的的头部。
+# Cookie和Session
+* 通过Set-Cookie设置
+* 下次请求会自动带上
+* 键值对,可以设置多个
+## cookie属性
+* max-age和 expires设置过期时间 默认在当前会话
+* Secure只在https的时候发送
+* HttpOnly无法通过document.cookie访问
+* HostAdmin Host Editor
+* // 二级域名共享cookie
+## HTTP长连接
+* Connection :Keep-alive
+# 数据协商
+* Accept  
+* Accept-Encoding
+* Accept-Language
+* User-Agent
+* Content-type
+* Content-Encoding
+* Content-Language
+
+# window.chrome.loadTimes()   //查看当前的网页是否使用HTTP2
+# Redirect重定向
+* 301 缓存慎重使用,被浏览器缓存后,需用户自己清缓存<永久重定向>
+# Content-Security-Policy
+* 限制资源获取
+* 报告资源获取越权
+* default-src限制全局
+* 指定资源类型
+* [CSP](https://developer.mozilla.org/zh-CN/docs/Glossary/CSP)
