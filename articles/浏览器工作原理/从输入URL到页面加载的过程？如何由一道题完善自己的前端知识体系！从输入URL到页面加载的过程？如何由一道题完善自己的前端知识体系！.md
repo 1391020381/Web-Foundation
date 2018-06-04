@@ -377,4 +377,20 @@
     <div><img src="awesome-photo.jpg"></div>
   </body>
 </html>
- ```      
+ ```   
+
+ ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/browser_parse_html.png)  
+
+ * 重点过程：
+    1. Conversion转换：浏览器将获得的HTML内容（Bytes）基于他的编码转换为单个字符
+
+    2. Tokenizing分词：浏览器按照HTML规范标准将这些字符转换为不同的标记token。每个token都有自己独特的含义以及规则集
+
+    3. Lexing词法分析：分词的结果是得到一堆的token，此时把他们转换为对象，这些对象分别定义他们的属性和规则
+
+    4. DOM构建：因为HTML标记定义的就是不同标签之间的关系，这个关系就像是一个树形结构一样
+例如：body对象的父节点就是HTML对象，然后段略p对象的父节点就是body对象
+* 最后的DOM树如下：
+
+
+### 生成CSS规则
