@@ -416,4 +416,13 @@ img { float: right }
 * 当DOM树和CSSOM都有了后，就要开始构建渲染树了
 * 一般来说, 渲染树和dom树相对应的,但不是严格意义上的对应
 * 因为有一些不可见的dom元素不会插入到渲染树中，如head这种不可见的标签或者 display:none等
+* 整体来说可以看图
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/browser_parse_rendertree.png)
+
+
+
+### 渲染
+* 有了render树  接下来就是开始渲染,基本流程如下
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/browser_rendingprocess.jpg)
