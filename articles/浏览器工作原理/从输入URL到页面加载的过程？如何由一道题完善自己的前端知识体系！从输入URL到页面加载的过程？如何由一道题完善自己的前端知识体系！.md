@@ -239,3 +239,9 @@
 
     * 然后浏览器本地就有这个cookie了，以后访问同域名下的页面时，自动带上cookie，自动检验，在有效时间内无需二次登陆。
 * 一般来说,cookie是不允许存放敏感信息的(千万不要明文存储用户名、密码),因为非常不安全,如果一定要强行存储,首先,一定要在cookie中设置httponly(这样就无法通过js操作了)，另外可以考虑rsa等非对称加密(因为实际上,浏览器本地也是容易被攻克的,并不安全)
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/cookie%E4%BC%98%E5%8C%96.png)
+
+* 关于cookie的交互
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/http_cookie_session.png)
