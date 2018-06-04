@@ -394,3 +394,15 @@
 
 
 ### 生成CSS规则
+* Bytes → characters → tokens → nodes → CSSOM
+```
+body { font-size: 16px }
+p { font-weight: bold }
+span { color: red }
+p span { display: none }
+img { float: right }
+
+```
+
+* 最终的CSSSOM树就是:
+
