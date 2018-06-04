@@ -366,7 +366,6 @@
     * Bytes -> characters -> tokens -> nodes -> DOM
  *  譬如假设有这样一个HTML页面：（以下部分的内容出自参考来源，修改了下格式）
 
-![](https://dailc.github.io/staticResource/blog/basicKnowledge/whenyouenteraurl/browser_rending.png)
 
  ```
 <html>
