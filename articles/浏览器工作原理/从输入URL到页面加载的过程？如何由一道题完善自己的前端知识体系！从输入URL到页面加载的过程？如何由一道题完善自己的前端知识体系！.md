@@ -224,4 +224,18 @@
      4. CRLF
         * CRLF (Carriage-Return Line-Feed)  意思是回车换行,一般作为分隔符存在
         * 请求头和实体消息之间有一个CRLF分隔,响应头部和响应实体之间用一个CRLF分隔。
-           
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/http_ajax_headers.png)
+### cookie以及优化
+* cookie是浏览器的一种本地存储方式，一般用来帮助客户端和服务端通信的，常用来进行身份校验，结合服务端的session使用。
+    * 在登陆页面，用户登陆了
+
+    * 此时，服务端会生成一个session，session中有对于用户的信息（如用户名、密码等）
+
+    * 然后会有一个sessionid（相当于是服务端的这个session对应的key）
+
+    * 然后服务端在登录页面中写入cookie，值就是:jsessionid=xxx
+
+    * 然后浏览器本地就有这个cookie了，以后访问同域名下的页面时，自动带上cookie，自动检验，在有效时间内无需二次登陆。
+* 一般来说,cookie是不允许存放敏感信息的(千万不要明文存储用户名、密码),因为非常不安全,如果一定要强行存储,首先,一定要在cookie中设置httponly(这样就无法通过js操作了)，另外可以考虑rsa等非对称加密(因为实际上,浏览器本地也是容易被攻克的,并不安全)
