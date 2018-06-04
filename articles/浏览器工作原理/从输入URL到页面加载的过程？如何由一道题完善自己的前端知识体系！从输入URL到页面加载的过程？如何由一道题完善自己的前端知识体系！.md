@@ -356,16 +356,19 @@
     4. 布局render树(Layout/reflow) 负责各元素尺寸、位置的计算
     5. 绘制render树(paint) 绘制页面像素信息
     6. 浏览器会将各层的信息发送给GPU,GPU将各层合成(composite),显示在
-    屏幕上  
+    屏幕上 
+
+    ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/browser_rending.png)
+
  ### HTML解析，构建DOM
  * 浏览器解析HTML,构建DOM树。
  * 解析HTML到构建出DOM当然过程可以简述如下：
     * Bytes -> characters -> tokens -> nodes -> DOM
  *  譬如假设有这样一个HTML页面：（以下部分的内容出自参考来源，修改了下格式）
- ```
 
 ![](https://dailc.github.io/staticResource/blog/basicKnowledge/whenyouenteraurl/browser_rending.png)
 
+ ```
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
