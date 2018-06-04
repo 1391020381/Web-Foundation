@@ -202,4 +202,26 @@
     * Connection
     * Host
     * Origin:最初的请求是从哪里发起的(只会精确到端口)，Origin比Referer更尊重隐私。
-    * Referer
+    * Referer： 该页面的来源URL(使用于所有类型的请求,会精确到详情页面地址,csr拦截常用到这个字段)
+    * User-Agent：用户客户端的一些必要信息,如UA头部等
+    * 常用的响应头部(部分):
+        * Access-Control-Allow-Headers
+        * Access-Control-Allow-Origin
+        * Content-Type
+        * Date
+        * Cache-Control
+        * Last-Modified
+        * Expires
+        * Max-age
+        * Etag
+        * Set-Cookie
+        * Keep-Alive
+        * Server
+      3. 请求/响应实体
+        * http请求时,除了头部,还有消息实体,一般来说，请求实体中会将一些需要的参数都放入(用于post请求)
+        *   一般响应实体中，就是放服务端需要传给客户端的内容
+        * 一般现在的接口请求时，实体中就是对于的信息的json格式，而像页面请求这种，里面就是直接放了一个html字符串，然后浏览器自己解析并渲染。
+     4. CRLF
+        * CRLF (Carriage-Return Line-Feed)  意思是回车换行,一般作为分隔符存在
+        * 请求头和实体消息之间有一个CRLF分隔,响应头部和响应实体之间用一个CRLF分隔。
+           
