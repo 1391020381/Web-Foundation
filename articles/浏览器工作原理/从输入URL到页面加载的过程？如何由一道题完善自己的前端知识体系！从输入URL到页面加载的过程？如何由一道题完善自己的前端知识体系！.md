@@ -392,6 +392,7 @@
 例如：body对象的父节点就是HTML对象，然后段略p对象的父节点就是body对象
 * 最后的DOM树如下：
 
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/browser_parse_dom.png)
 
 ### 生成CSS规则
 * Bytes → characters → tokens → nodes → CSSOM
@@ -405,4 +406,9 @@ img { float: right }
 ```
 
 * 最终的CSSSOM树就是:
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/browser_parse_dom.png)
+
+### 构建渲染树
 
