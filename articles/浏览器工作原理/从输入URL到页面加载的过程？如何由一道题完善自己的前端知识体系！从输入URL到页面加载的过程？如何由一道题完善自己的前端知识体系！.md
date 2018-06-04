@@ -345,3 +345,5 @@
     * 也没有精确时间的限制，只要文件一遍，立马E-tag就不一样了
 
     * `如果同时带有E-tag和Last-Modified，服务端会优先检查E-tag`
+
+    ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/http_cache.png)
