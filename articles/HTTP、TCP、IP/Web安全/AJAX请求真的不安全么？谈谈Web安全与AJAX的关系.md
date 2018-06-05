@@ -11,4 +11,9 @@
     * 恶意代码执行
 2. csrf(跨站请求伪造)(cross-site request forgery)
     * 伪造用户身份操作
-3. SQL注入    
+3. SQL注入
+
+# CSRF简介
+    * csrf_attack_1.png
+
+ * 一般在(4)处恶意网站(B)的攻击手段如下()   
