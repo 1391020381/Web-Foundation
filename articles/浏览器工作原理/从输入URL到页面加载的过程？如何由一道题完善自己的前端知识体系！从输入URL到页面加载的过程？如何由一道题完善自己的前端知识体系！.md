@@ -426,3 +426,55 @@ img { float: right }
 * 有了render树  接下来就是开始渲染,基本流程如下
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/browser_rendingprocess.jpg)
+* 图中重要的四个步骤就是：
+    1. 计算css样式
+    2. 构建渲染树
+    3. 布局，主要定位坐标和大小,是否换行,各种position overflow  z-index属性
+    4. 绘制,将图像绘制出来
+    * 然后,图中的线与箭头代表通过js动态修改了dom或css,导致了重新布局(Layout)或渲染(Repaint)
+    * Layout 也称为Reflow 即回流。 一般意味着元素的内容、结构、位置或尺寸发生了变化,需要重新计算样式和渲染树
+    * Repaint ,即重绘。意味着元素发生的改变只是影响了元素的一些外观之类的时候(例如,背景色、边框颜色、文字颜色等) 此时只需要应用新样式绘制这个元素就可以了。
+    * 回流的成本开销要高于重绘,而且一个节点的回流往往会导致子节点以及同级节点的回流,所以优化方案中一般都包括,尽量避免回流。
+ #### 什么会引起回流
+   1. 页面渲染初始化
+   2. DOM结构改变,比如删除了某个节点
+   3. render树变化,比如减少了padding
+   4. 窗口resize
+   5. 最复杂的一种:获取某些属性,引发回流,很多浏览器会对回流做优化,会等到数量足够时做一次批处理回流
+   6. 但是除了render树的直接变化,当获取一些属性时,浏览器为了获得正确的值也会触发回流,这样使得浏览器优化无效,包括
+* offset(Top/Left/Width/Height)
+* scroll(Top/Left/Width/Height)
+* client(Top/Left/Width/Height)
+* width,height
+* 调用了getComputedStyle()或者IE的currentStyle
+* 回流一定伴随着重绘,重绘却可以单独出现
+* 所以一般会有一些优化方案,如
+    * 减少逐项更改样式,最好一次更改style,或者将样式定义为class并一次性更新
+    * 避免循环操作dom,创建一个documentFragment或div,在它上面应用所有DOM操作,最后再把它添加到 window.document
+    * 避免多次读取offset等属性。无法避免则将它们缓存到变量
+    * 将复杂的元素绝对定位或固定定位,使得它脱离文档流,否则回流代价会很高。
+    * 注意：改变字体大小会引发回流
+
+ ```
+var s = document.body.style;
+
+s.padding = "2px"; // 回流+重绘
+s.border = "1px solid red"; // 再一次 回流+重绘
+s.color = "blue"; // 再一次重绘
+s.backgroundColor = "#ccc"; // 再一次 重绘
+s.fontSize = "14px"; // 再一次 回流+重绘
+// 添加node，再一次 回流+重绘
+document.body.appendChild(document.createTextNode('abc!'));
+
+ ```   
+   #### 简单层与复合层
+   * 上述中的渲染中止步于绘制，但实际上绘制这一步也没有这么简单，它可以结合复合层和简单层的概念来讲。
+     * 可以认为默认只有一个复合图层，所有的DOM节点都是在这个复合图层下的
+     * 如果开启了硬件加速功能，可以将某个节点变成复合图层
+     * 复合图层之间的绘制互不干扰,由GPU直接控制
+     * 而简单图层中，就算是absolute等布局，变化时不影响整体的回流，但是由于在同一个图层中，仍然是会影响绘制的，因此做动画时性能仍然很低。而复合层是独立的，所以一般做动画推荐使用硬件加速
+     * [普通图层和复合图层](https://segmentfault.com/a/1190000012925872#articleHeader16)
+
+   #### Chrome中的调试
+   * Chrome的开发者工具中,Performance中可以看到详细的渲染过程
+     
