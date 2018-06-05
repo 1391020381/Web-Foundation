@@ -18,6 +18,9 @@
     * CORS是一个W3C标准，全称是”跨域资源共享”（Cross-origin resource sharing）。它允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。
     * 基本上目前所有的浏览器都实现了CORS标准,其实目前几乎所有的浏览器ajax请求都是基于CORS机制的,只不过可能平时前端开发人员并不关心而已(所以说其实现在CORS解决方案主要是考虑后台该如何实现的问题)。
     * [跨域资源共享 CORS 详解(阮一峰)](http://www.ruanyifeng.com/blog/2016/04/cors.html)
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/img/%E8%B7%A8%E5%9F%9F%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%ABCORS.png)
+
 3. 如何判断是否是简单请求
     * 浏览器将CORS请求分成两类：简单请求（simple request）和非简单请求（not-so-simple request）。`只要同时满足以下两大条件`，就属于简单请求。
         *  请求方法是以下三种方法之一: HEAD  GET  POST
@@ -26,4 +29,6 @@
             * Accept-Language
             * Content-Language
             * Last-Event-ID
-            * Content-Type(只限于三个值application/x-www.form-urlencoded   multipart/form-data  text/plain)      
+            * Content-Type(只限于三个值application/x-www.form-urlencoded   multipart/form-data  text/plain) 
+ 4. ajax跨域的表现
+    * 根据对应的表现来判断是跨域                 

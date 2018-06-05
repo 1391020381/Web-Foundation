@@ -1,2 +1,8 @@
 * [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
 * [从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！](http://www.dailichun.com/2018/03/12/whenyouenteraurl.html)
+* [这一次，彻底弄懂 JavaScript 执行机制](https://juejin.im/post/59e85eebf265da430d571f89)
+* [一道常被人轻视的前端JS面试题](http://www.cnblogs.com/xxcanghai/p/5189353.html)
+* [我接触过的前端数据结构与算法](https://juejin.im/post/5958bac35188250d892f5c91)
+* [通过一个场景实例 了解前端处理大数据的无限可能](https://juejin.im/post/59688fd051882548d32b19c5)
+* [破解前端面试（80% 应聘者不及格系列）：从 DOM 说起](https://juejin.im/post/58f558efac502e006c3e5c97#heading-0)
+* [iframe,我们来谈一谈](https://segmentfault.com/a/1190000004502619)
