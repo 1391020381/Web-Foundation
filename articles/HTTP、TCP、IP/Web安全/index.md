@@ -2,6 +2,8 @@
 * [Web 安全 英文](https://auth0.com/blog/common-threats-in-web-app-security/)
 * [title="AJAX请求真的不安全么？谈谈Web安全与AJAX的关系。AJAX请求真的不安全么？谈谈Web安全与AJAX的关系"](http://www.dailichun.com/2018/01/04/security_ajaxissafeornot.html)
 * [XSS 和 CSRF 攻击的一些非常规防御方法](http://www.imooc.com/article/18069)
+* [用大白话谈谈XSS与CSRF](https://segmentfault.com/a/1190000007059639)
+* [常见网络攻击--XSS && CSRF](https://segmentfault.com/a/1190000009514661)
 * 私密性 不被非法获取和利用
 * 可靠性  不丢失不损坏不被修改
 # Web安全
