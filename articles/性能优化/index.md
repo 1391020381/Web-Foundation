@@ -3,6 +3,7 @@
 * 《高性能网站建设进阶指南》
 * 《高性能JavaScript》
 * [前端性能优化相关](https://github.com/wy-ei/notebook/issues/34#issuecomment-266946255)
+* [Web静态资源缓存及优化](https://juejin.im/post/5a098b5bf265da431a42b227)
 * ChromeDevTools-性能监控
   * [Chrome DevTools-官网](https://developers.google.com/web/tools/chrome-devtools)
   * [Chrome DevTools - 性能监控](https://juejin.im/post/5a37b2f56fb9a0451e3fe73d)
