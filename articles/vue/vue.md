@@ -1,2 +1,3 @@
 
-[用jsx写vue组件](http://www.alloyteam.com/2017/07/12918/)
+* [用jsx写vue组件](http://www.alloyteam.com/2017/07/12918/)
+* [你不知道的Vue技巧之--开发一个可以通过方法调用的组件](https://www.imooc.com/article/24041)
