@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css-grid</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .app-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 100vh;
+    }
+    .tweets{
+        background: palegreen;
+    }
+    .replies{
+        background: gold;
+    }
+    .search{
+        background: salmon;
+    }
+    .message{
+        background: darkcyan;
+    }
+    </style>
+</head>
+<body>
+    <div class="app-layout">
+        <div class="tweets">Tweets</div>
+        <div class="replies">Replies</div>
+        <div class="search">Search</div>
+        <div class="message">Message</div>
+    </div>
+</body>
+</html>
