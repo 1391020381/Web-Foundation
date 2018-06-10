@@ -1,6 +1,7 @@
 * 根据慕课网的课程整理
 * [OpenDoc - 前端简历评级标准](https://juejin.im/post/58b6679461ff4b006ccd825e)
 * [我遇到的前端面试题2017](http://www.imooc.com/article/20319)
+* https://mp.weixin.qq.com/s/TvC-GySQ-Bsbi3heCqH8QQ
 # 关于面试
 1. 技术面试
 2. 负责人面试
