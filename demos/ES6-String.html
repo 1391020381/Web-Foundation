@@ -7,6 +7,8 @@
     <title>ES6-String</title>
 </head>
 <body>
+
+    <div style="height: 800px;"></div>
     <script>
     
     function tag(literals, ...substitutions) {
@@ -17,7 +19,14 @@
     }
     let a = 4
     let t = tag`${a} haha`
-    console.log(t) //4 haha
+    //console.log(t) //4 haha
+    </script>
+
+    <script>
+    // iframe
+
+     console.log('parent:',window.parent)
+     console.log('self:',window.self)
     </script>
 </body>
 </html>

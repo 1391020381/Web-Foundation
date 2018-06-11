@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iframe</title>
+</head>
+<body>
+    <iframe src="./ES6-String.html" scrolling="no"></iframe>
+
+    <script>
+    var iframe = document.querySelector('iframe')
+    var iwindow = iframe.contentWindow
+    var idoc = iwindow.document
+    iframe.height = idoc.body.offsetHeight
+    </script>
+</body>
+</html>
