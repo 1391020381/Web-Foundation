@@ -3,7 +3,8 @@
 ## Promise派生
 
 * 本质上,一个promise是某个函数返回的对象,你可以把回调函数绑定在这个对象上,而不是把回调函数当作参数传进函数。
-# 原理剖析
+# [原理剖析](https://segmentfault.com/a/1190000009478377#articleHeader5)
+
 ## 极简promise雏形
 ```
 function Promise(fn){
