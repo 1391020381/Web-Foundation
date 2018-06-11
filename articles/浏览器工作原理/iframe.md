@@ -47,4 +47,12 @@
     * 不能创建新的弹框和Window
     * 不能发送表单
     * 不能加载额外插件比如 flash  
+  7.  resolve iframe跨域 
+    *   iframe就是一个隔离沙盒,相当于我们在一个页面内可以操作很多个标签一样。
     
+    * HTML规范说：The iframe element represents a nested browsing context
+    * 如果你需要独立的浏览器上下文,那么就用iframe,否则就不用
+    * 沙箱隔离
+    * 应用第三方东西<广告>
+    * 独立的带有交互的内容，比如幻灯片
+    * 需要保持独立焦点和历史管理的子窗口,如复杂的Web应用 qq邮箱  。富文本
