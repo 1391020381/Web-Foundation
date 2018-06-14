@@ -1,3 +1,6 @@
 * [vue-analysis](https://github.com/ustbhuangyi/vue-analysis)
 * [learnVue](https://github.com/answershuto/learnVue)
 * [vue实践中的常见知识漏洞001](https://juejin.im/post/5b18c50d5188251377116fe9#heading-18)
+* [vue-lazyload懒加载图片或组件](https://github.com/hilongjw/vue-lazyload#lazy-component)
+* [动态组件-处理加载状态](https://cn.vuejs.org/v2/guide/components-dynamic-async.html)
+*  [Nerv实战 - 京东首页改版小结](https://aotu.io/notes/2018/04/24/jdindex_2017/)

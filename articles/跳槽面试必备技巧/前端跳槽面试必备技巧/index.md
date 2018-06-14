@@ -2,6 +2,7 @@
 * [OpenDoc - 前端简历评级标准](https://juejin.im/post/58b6679461ff4b006ccd825e)
 * [我遇到的前端面试题2017](http://www.imooc.com/article/20319)
 * https://mp.weixin.qq.com/s/TvC-GySQ-Bsbi3heCqH8QQ
+* [史上最全前端实习面试攻略｜你能遇到的所有问题都在这里！](https://zhuanlan.zhihu.com/p/38091137?utm_source=qq&utm_medium=social&utm_oi=543756693541003264)
 # 关于面试
 1. 技术面试
 2. 负责人面试
