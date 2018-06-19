@@ -1,0 +1,1 @@
+*  It is important to know that in any Vue Instance lifecycle ,only `beforeCreate and created` hooks are called both called both from client-side and server-side .All other hooks  are called only from the client-side. 
