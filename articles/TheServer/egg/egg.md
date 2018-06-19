@@ -19,11 +19,38 @@
   DEBUG=* npm run dev
   ```  
   
-  # 基础功能
-    * 目录结构
-      1. app.js 和 agent.js用于自定义启动时的初始化工作<egg可以自定义启动>
-      2. app/schedule/**用于定时任务,可选
-    * 内置对象
+ # 基础功能
+  * 目录结构<egg-project>
+     * packge.json
+    *  app.js
+    * agent.js
+    * app
+    1. router
+    2. controller
+    3. service
+    4. middleware
+    5. schedule
+    6. public
+    7. view
+    8. extend
+    * helper.js
+    * request.js
+    * response.js
+    * context.js
+    * application.js
+    * agent.js 
+    9. config
+    * plugin.js
+    * config.default.js
+    * config.prod.js
+    * config.test.js
+    * config.local.js
+    * config.unittest.js
+    10. test
+    * middleware
+    * controller
+    
+  * 内置对象
       1. Application
       2. Context请求级别的对象 <非用户请求的场景下 可以通过 Application.createAnonymousContext() 方法创建一个匿名 Context 实例 > 
       3. Request   Response
@@ -39,7 +66,7 @@
           * ctx.helper.method()
           * 在模板中使用 helper.shtml()
       7.  Config
-   # 运行环境
-     *  app.config.env  
-   # Config配置
+  # 运行环境
+  *  app.config.env  
+  # Config配置
         
