@@ -9,3 +9,5 @@
 * document对象是所有HTML元素的网关,这些元素构成了Web页面显示内容。你可以随意的阅读和操作你的文件。
 ## 总结
 * DOM是用于处理HTML文档的最重要的功能。它将HTML、CSS和JavaScript联系起来。它还提供了对document和window对象的访问级别。
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/BomAndDom/img/browser-dom-5.png)

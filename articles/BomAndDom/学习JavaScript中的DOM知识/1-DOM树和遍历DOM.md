@@ -14,6 +14,7 @@
 * 父母（Parents）、兄弟姐妹（Siblings）和子元素（Children）著作权归作者所有。
 
 ## 总结
+* hasChildNodes()可以用来判断某个元素是否包含子节点著作权归作者所有。
 * children元素节点的子元素
 * firstElementChild、 lastElementChild:元素的第一个或最后一个子元素
 * previousElementSibling和nextElementSibling：元素的前一个或后一个相邻元素
@@ -22,3 +23,12 @@
 * 向上获取，比如parentNode、parentElement和closest；
 * 向下获取，比如querySelector()、querySelectorAll()、children、firstChildren、lastChildren和childNodes
 * 兄弟元素（节点），比如nextElementSibling、previousElementSibling、nextSibling和previousSibling
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/BomAndDom/img/dom-tree-19.png)
+
+
+* 兄弟姐妹和父母打交道
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/BomAndDom/img/dom-tree-20.png)
+
+* 子元素打交道
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/BomAndDom/img/dom-tree-21.png)
