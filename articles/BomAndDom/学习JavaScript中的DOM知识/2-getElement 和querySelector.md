@@ -1,0 +1,1 @@
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/BomAndDom/img/traverse-dom-1.png)
