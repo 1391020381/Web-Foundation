@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript 是如何工作的：CSS 和 JS 动画背后的原理 + 如何优化性能</title>
+    <style>
+    .box{
+        transform: translate(0,0);
+        transition:transform 1000ms;
+    }
+    .box.move{
+        transform:translate(50px,50px)
+    }
+/*     
+    .box{
+        animation-name:movingBox;
+        animation-duration: 2300ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes movingBox{
+        0% {
+            transfrom: translate(0,0);
+            opacity:0.4;
+        }
+        25%{
+            opacity: 0.9;
+        }
+        50%{
+            transform: translate(150px,200px);
+            opacity: 0.2;
+        }
+        100%{
+            transform: translate(40px,30px);
+            opacity:0.8;
+        }
+    } */
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        Sample content
+    </div>
+
+    <!-- <script>
+    var boxElements = document.getElementsByClassName('box'),
+    boxElementsLength = boxElements.length,
+    i;
+
+for (i = 0; i < boxElementsLength; i++) {
+  boxElements[i].classList.add('move');
+}
+var boxElement = document.querySelector('.box')
+boxElement.addEventListener('transitionend',onTransitionEnd,false)
+
+function onTransitionEnd(){
+    console.log('onTransitionEnd')
+    boxElement.classList.remove('move')
+    boxElement.style.transition = 'none'
+}
+    
+    
+    </script> -->
+
+    <script>
+    var boxElement = document.querySelector('.box');
+var animation = boxElement.animate([
+  {transform: 'translate(0)'},
+  {transform: 'translate(150px, 200px)'}
+], 500);
+animation.addEventListener('finish', function() {
+  boxElement.style.transform = 'translate(150px, 200px)';
+});
+    
+    </script>
+</body>
+</html>
