@@ -13,4 +13,12 @@
  * ios7以下,javascriptCore无法使用。  
  * 如果需要兼容低版本的机型,url scheme方案是不二选择。
 
- #  
+
+![JSBridge](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/hybrid/img/JSBridge_baseprinciple.png)
+
+
+ # H5直接与Native交互
+ * H5调Android原生通过 addJavascriptInterface注册,然后h5直接调用
+ * Android调用H5原生loadurl来调用h5,4.4及以上还可以通过 evaluateJavaScript 调用
+ * H5调ios原生通过 javascriptCore注册(需ios7以上),然后H5直接调用
+ * IOS调用h5通过 stringByEvaluatingJavaScriptFromString
