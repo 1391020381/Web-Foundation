@@ -87,3 +87,14 @@ http {
     * listen监督端口号
     * location / {}   访问根路径
     * proxy_pass http://firstdemo  代理到firstdemo里两个服务器上
+
+
+    ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/TheServer/Nginx/img/nginx%E5%9F%BA%E7%A1%80%E7%AF%87.png)
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/TheServer/Nginx/img/%E5%9C%BA%E6%99%AF%E5%AE%9E%E8%B7%B5%E7%AF%87.png)
+
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/TheServer/Nginx/img/%E6%9E%B6%E6%9E%84%E7%AF%87.png)
+
+![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/TheServer/Nginx/img/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AF%87.png)
