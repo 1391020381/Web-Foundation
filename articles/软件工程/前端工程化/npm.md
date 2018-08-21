@@ -26,3 +26,18 @@
 
 
   * [npm CLI commands](https://docs.npmjs.com/cli/init)
+
+ 2.  私有git共享package
+ * 我们可以简单地将被依赖的包托管在私有的git仓库中,然后将该git url保存到 dependencies中 npm会直接调用系统的git 命令从git仓库拉取包的内容到node_modules中。
+ * [npm支持的git url格式](https://docs.npmjs.com/files/package.json#git-urls-as-dependencies)
+ * <protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path>[#<commit-ish> | #semver:<semver>]
+* git 路径后可以使用 # 指定特定的 git branch/commit/tag, 也可以 #semver: 指定特定的 semver range
+```
+git+ssh://git@github.com:npm/npm.git#v1.0.27
+git+ssh://git@github.com:npm/npm#semver:^5.0
+git+https://isaacs@github.com/npm/npm.git
+git://github.com/npm/npm.git#v1.0.27
+
+```
+3. 开源 package问题修复
+* 最好的的办法当是 fork原作者的git库,在自己所属的repo下修复问题后,将 dependencies中相应的依赖项更改为自己修复版本的git url即可解决。(Fork代码库后,也便于向原作者提交pr修复问题。上游代码库修复问题后,再次更新我们的依赖配置也不迟。)
