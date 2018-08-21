@@ -41,3 +41,17 @@ git://github.com/npm/npm.git#v1.0.27
 ```
 3. 开源 package问题修复
 * 最好的的办法当是 fork原作者的git库,在自己所属的repo下修复问题后,将 dependencies中相应的依赖项更改为自己修复版本的git url即可解决。(Fork代码库后,也便于向原作者提交pr修复问题。上游代码库修复问题后,再次更新我们的依赖配置也不迟。)
+4. 依赖版本升级
+* npm 5 package-lock.json 无论何时执行 install npm都会优先按照package-json中指定的版本来安装webpack。
+* 无论何时完成安装/更新 package-lock文件总会跟着 node_modules更新(因此可以视package-lock文件为node_modules的JSON表述)
+* 已安装node_modules后若执行npm update,package.json中版本号也会随之更改
+5. 最佳实践
+* npm >5.1版本,保持package-lock.json文件默认开启配置
+* 依赖range到 package.json中 提交 package.json package-lock.json 不要提交 node_modules目录。
+* 初始化：项目成员首次 checkout/clone项目代码后,执行一次 npm install 安装依赖包
+* 不要手动修改 package-lock.json
+* 升级依赖包
+  * 升级小版本; npm update
+  * 升级大版本： npm install <package-name>@<version>
+  * 也可手动修改package.json中版本号也要升级的版本(大于现有版本号)并指定所需的semver 然后执行 npm install
+  * 本地验证升级后新版本无问题后,提交新的 package.json package-lock.json文件
