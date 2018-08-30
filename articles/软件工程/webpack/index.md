@@ -73,3 +73,67 @@ output:{
 ```
 
 # Webpack 4 下的最佳实践
+
+1. mode
+* 设置了mode之后会把 process.env.NODE_ENV也设置为development或者 production.然后在producetion模式下,会默认开启UglifyJsPlugin等等一对插件。
+
+
+2. 第三方库build的选择
+```
+// webpack3
+resolve:{
+ extensions:[".js",".vue",".json"],
+ alias:{
+  vue$:"vue/dist/vue.runtime.min.js"
+ }
+}
+
+
+// 在 Webpack 4 引入了 mode 之后，对于部分依赖，我们可以不用配置 alias，比如 React。React 的入口文件是这样的：
+'use strict';
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./cjs/react.production.min.js');
+} else {
+  module.exports = require('./cjs/react.development.js');
+}
+
+// 复制代码这样就实现了 0 配置自动选择生产 build。
+// 但大部分的第三库并没有做这个入口的环境判断。所以这种情况下我们还是需要手动配置 alias。
+```
+
+2. Code Splitting
+* optimization.splitChunks默认是不用设置的。如果mode是production 那webpack4就会开启Code Spliting
+* 默认webpack4只会对按需加载的代码做分割。如果我们需要配置初始化加载的代码也加入代码分割中,可以设置splitChunk.chunks 为 all
+
+
+```
+optimization:{
+ splitChunks:{
+  cacheGroups:{
+  common:{
+   chunks(chunk){
+    return chunk.name !=='c'
+   },
+   name:'common',
+   minChunks:2
+  }
+  }
+ }
+}
+```
+
+3. Long-term caching
+* 在生产环境中的webpack配置添加 plugin NamedChunksPlugin
+
+```
+// 使用模块名称作为chunkid,替换掉原本的使用递增id来作为chunkid导致的[新增entry模块,其他模块的hash发生抖动,导致客户端长效缓存失效]
+config.plugins.push(new webpack.NamedChunksPlugin((chunk) => {
+  // 解决异步模块打包的问题
+  if (chunk.name) {
+    return chunk.name;
+  }
+  return chunk.modules.map(m => path.relative(m.context, m.request)).join("_");
+}));
+
+```
