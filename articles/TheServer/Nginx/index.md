@@ -98,3 +98,13 @@ http {
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/TheServer/Nginx/img/%E6%9E%B6%E6%9E%84%E7%AF%87.png)
 
 ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/TheServer/Nginx/img/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AF%87.png)
+
+# Nginx的优点
+1. 更快
+2. 高扩展性
+3. 高可靠性
+4. 低内存消耗
+5. 单机支持10万以上的并发连接
+6. 热部署
+7. 最自由的BSD许可协议
+
