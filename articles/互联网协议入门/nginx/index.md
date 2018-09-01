@@ -24,3 +24,6 @@ add_header Cache-Control no-store;
 location ~ .*\.(js|css)$ {
 expires 10d;
 }
+
+* [前端工程师学习Nginx入门篇](http://cnt1992.xyz/2016/03/18/simple-intro-to-nginx/)
+* [前端工程师学习Nginx实践配置HTTP2.0篇](http://cnt1992.xyz/2016/04/08/upgrade-nginx-to-http2/)
