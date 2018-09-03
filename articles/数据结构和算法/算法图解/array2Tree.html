@@ -14,13 +14,13 @@
   function array2Tree (data) {
     var city = {}
     data.forEach(it => {
-      if (it.parentId === 0)//顶级父类
+      if (it.parentId === 0) //顶级父类
         city[it.areaId] = {
           name: it.areaName,
           fChilds: {}
         };
       else {
-        if (city[it.parentId] && city[it.parentId].fChilds) {// 一级子类
+        if (city[it.parentId] && city[it.parentId].fChilds) {// 一级子类  当有二级数据走这一层的时候是否   city[it.parentId] 判断 为false 它的parentId 应为一级数据 所以会走else
           city[it.parentId].fChilds[it.areaId] = {
             name: it.areaName, sChilds: {}
           };
@@ -35,7 +35,6 @@
     })
     console.log(city)
   }
-
 
   var areaList = {
     "head": {
