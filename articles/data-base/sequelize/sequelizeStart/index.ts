@@ -1,5 +1,4 @@
  import Sequelize from 'sequelize'
-import { AssertionError } from 'assert';
 const sequelize = new Sequelize('nodelover','root','',{
     host:'localhost',
     dialect:'mysql',
