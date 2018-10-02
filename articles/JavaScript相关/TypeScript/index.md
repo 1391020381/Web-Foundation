@@ -27,3 +27,11 @@ declare var jQuery:(string)=> any
 jQuery('#foo')
 ```
 * 第三方声明文件
+# 内置对象
+* JavaScript中有很多内置对象,它们可以直接在TypeScript中当做定义好了的类型。
+* TypeSctipt核心库的定义文件中定义了所有浏览器环境需要用到的类型,并且是预置在TypeScript中的。当你在使用一些常用的方法的时候,TypeScript实际上已经帮你做了很多类型判断的工作了。
+# 用TypeScript写Node.js
+* Node.js不是内置对象的一部分,如果想用TypeScript写Node.js,则需要引入第三方库
+```
+npm install @type/node --save-dev
+```
