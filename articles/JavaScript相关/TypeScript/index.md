@@ -5,6 +5,12 @@ https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
 * 另外我发现一个很好的工具dts-gen，https://github.com/Microsoft/dts-gen根据它的说明，安装好了之后，它会针对目标JS包自生成一个最基本款的.d.ts文件，帮你理清目标JS包的结构，自己在对于这个文件做进一步的细化和修改。这个特别好，但是有时候对于一些特别复杂的JS包，它会抛出异常，目前看是bug了，总之比没有强很多
 
 * [typescript-tutorial](https://github.com/xcatliu/typescript-tutorial/blob/master/introduction/README.md)
+# 原始数据类型
+# 任意值
+# 联合类型
+# 对象类型 -接口
+# 数组类型
+# 函数的类型
 # 类型断言
 * 类型断言 (Type Assertion)可以用来手动指定一个值的类型<类型>值
 *  类型断言的用法如上,在需要断言的变量前加上<Type> 即可。
