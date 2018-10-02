@@ -23,3 +23,35 @@ let allDiv:NodeList = document.querySelectorAll('div')
 document.addEventListener('click',function(e:MouseEvent){
     console.log(e)
 })
+
+type Name = string;
+type NameResolver = ()=> string;
+type NameOrResolver = Name | NameResolver;
+function getName(n:NameOrResolver):Name{
+    if(typeof n === 'string'){
+        return n;
+    }else{
+        return n();
+    }
+}
+
+type EventNames = 'click'  | 'scroll' | 'mousemove';
+function handleEvent(ele:Element,event:EventNames){
+
+}
+handleEvent(document.getElementById('hello'),'scroll')
+handleEvent(document.getElementById('world'),'click')
+
+let xcatliu:[string,number] = ['Xcat Liu',25];
+
+class Animal {
+    public name;
+    public constructor(name){
+   this.name = name;
+    }
+}
+
+let a = new Animal('Jack');
+console.log(a.name);
+a.name = 'Tom';
+console.log(a.name);
