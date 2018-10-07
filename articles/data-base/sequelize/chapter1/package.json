@@ -1,5 +1,5 @@
 {
-  "name": "sequelizeStart",
+  "name": "chapter1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,6 +14,6 @@
     "sequelize": "^4.39.0"
   },
   "devDependencies": {
-    "@types/sequelize": "^4.27.26"
+    "@types/sequelize": "^4.27.27"
   }
 }
