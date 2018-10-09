@@ -1,6 +1,7 @@
 import Sequelize from 'sequelize';
-const sequelize = new Sequelize('nodelover', 'root', 'GHzXlxXYg9&G' || 'justdoit', {
+const sequelize = new Sequelize('nodelover', 'root', 'justdoit' || 'GHzXlxXYg9&G', {
     host: 'localhost',
+    port: 3306,
     dialect: 'mysql',
     pool: {
         max: 5,
