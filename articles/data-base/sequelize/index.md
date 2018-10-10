@@ -1,6 +1,3 @@
 * [sequelize](https://github.com/MiYogurt/nodelover-books/blob/master/sequelize/SUMMARY.md)
 * tsc --init 
 * [SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL clien](https://blog.csdn.net/u010026255/article/details/80062153)  
-# Migrations -迁移
-* 就像你使用Git/SVN来管理源代码的更改一样,你可以使用迁移来跟踪数据库的更改。通过迁移,你可以将现有的数据库转移到另一个装态,反之亦然：这些装态转换将保存在迁移文件中,它们描述了如何进入新状态以及如何还原更改以回复旧状态。
-* 需要使用到 Sequelize cli 。CLI支持迁移和项目引导。
