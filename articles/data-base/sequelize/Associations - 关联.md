@@ -61,7 +61,9 @@ Project.hasMany(User,{as:'Workers'})
 * 多对多的关联用于将源于多个目标连接。此外,目标也可以连接到多个源。
   
 ```
-Project.belongsToMany(User,{through:'UserProject'});
-User.belongsToMany(Project,{through:'UserProject});
+User.beblongsToMany(Tag, {through: 'user_tag'});
+Tag.belongsToMany(User, {through: 'user_tag'});
 
 ```  
+* 在多对多关系的表结构中,无论我们把关系id存在任何一个表中,会出现数据冗余的问题,所以在多对多关系下的表结构需要第三个表来保存它们之间的关系。
+* 第三张表，就是上面的user_tag。里面有一个userId和tagId字段。
