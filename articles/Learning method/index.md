@@ -4,3 +4,4 @@
 我们需要什么样的人？就一个字：潜力。潜力是什么？有思考有总结有想法有落地能力。其他没了
 * [熟练工如何拔高 & 零碎知识的整理](https://mp.weixin.qq.com/s/rb5UJXh70exRqeQdWFhkAA)
 * [程序员能靠技术渡过中年危机吗？](https://mp.weixin.qq.com/s/j4iikawV-DuIcdOde5Qv8w)
+* [可能是让你受益匪浅的英语进阶指南](https://github.com/byoungd/English-level-up-tips-for-Chinese)
