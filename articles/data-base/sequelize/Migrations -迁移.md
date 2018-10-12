@@ -49,3 +49,7 @@ module.exports = {
 * config.js 使用环境变量
 
 * `Sequelize CLI将加载 config/config.js 以获取配置选项。`
+
+# sequelize-cli
+* [sequelize-cli](https://github.com/sequelize/cli)
+* npm install --save-dev sequelize-cli
