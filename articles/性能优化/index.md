@@ -11,3 +11,4 @@
   * [全新Chrome Devtool Performance使用指南](https://zhuanlan.zhihu.com/p/29879682)
 
 * [2018你应该知道的Web性能信息采集指南](https://mp.weixin.qq.com/s?__biz=MzA5NzkwNDk3MQ==&mid=2650588047&idx=1&sn=eed8f5411e9e3903a490384e7b0228b7&chksm=8891d3abbfe65abdfbc32112569d2bf377fe615e7cede6e34bb6afec95396a00ed42f4ddf9fc&mpshare=1&scene=23&srcid=0903vCrImMpyJdX6MyvO2gQc#rd)
+* [developers.google.com/web/fundamentals/performance](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=zh-cn)
