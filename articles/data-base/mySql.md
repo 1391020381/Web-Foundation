@@ -99,10 +99,11 @@
   ```
   * 优先使用 INNER JOIN
   * sql对一条select语句中可以联结的表的数目没有限制。创建联结的基本规则也相同。
-  ```
+```
 select prod_name,vend_name,prod_price,quantity from orderitems,products,vendors
 where products.vend_id = vendors.vend_id and orderitems.prod_id = products.prod_id
-  ```
+```
+* 在一条SELECT语句中联结几个表时,相应的关系是在运行中构造的。在数据库的定义中不存在能指示MySql如何运行对对表进行联结的东西。你必须自己做这件事件。在联结两个表的时,你实际上做的时将第一个表中的每一行与第二表中的每一行配对。Where子句作为过滤条件,它只包含那些匹配给定条件(这里是联结条件)的行。
   # 创建高级联结
   ```
   select cust_name,cust_contact from customers AS c, orders as o , orderitems as oi where c.cust_id = o.cust_id and 
