@@ -47,3 +47,17 @@
 * mysql -uroot -p -P3306 -h127.0.0.1
 # mysql退出
 * exit;
+# 修改Mysql提示符
+* MySQL -uroot -proot --prompt提示符<\D \d \h \u>
+
+# MySQL常用命令以及语法规范
+* SELECT VERSION();
+* 关键字与函数名称全部大写
+* 数据库名称、表名称、字段名称全部小写
+* sql语句必须以分号结尾。
+# 操作数据库
+*  CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset_name
+* {} 必选项 有 | 表示其中一个
+* []可选
+* SHOW WARINGS
+* show create database t1;
