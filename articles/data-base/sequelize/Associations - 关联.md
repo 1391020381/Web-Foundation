@@ -20,7 +20,7 @@ User模型(函数被调用的模型)是source。Project模型(作为参数传递
 ```
 # 一对一关联
 * 一对一关联是通过单个外键连接的两个模型的关联。
-* BelongsTo 关联实在 source model上存在一对一关联的外键的关联
+* `BelongsTo 关联实在 source model上存在一对一关联的外键的关联`
 ```
 const Player = this.sequelize.define('player',{});
 const Team = = this.sequelize.define('team',{});
