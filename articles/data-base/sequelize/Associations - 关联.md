@@ -58,6 +58,7 @@ Project.hasMany(User,{as:'Workers'})
 // 这会将 projectId属性添加到User。根据你的设置,表中列表被称为 projectId 或project_id。
 // Project的实例将获得访问器getWorkers和setWorkers
 ```
+* `例如上面的解释(每行数据都加了projectId)似乎也是一对一,是怎么表现一对多？`
 # 多对多的关联
 * 多对多的关联用于将源于多个目标连接。此外,目标也可以连接到多个源。
   
