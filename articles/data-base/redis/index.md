@@ -1,0 +1,2 @@
+* [Windows7系统下安装redis的操作教程](https://blog.csdn.net/matiantian666/article/details/55048282)
+* [一文详细揭秘 Redis 持久化，了解一下？](https://mp.weixin.qq.com/s?__biz=MzIzNzA4NDk3Nw==&mid=2457736649&idx=1&sn=4a0252ca5635f5f078721620f45c703e&chksm=ff44bd97c83334814f1b702c7c0a47ed16598e5193b80d73df9de4faba064d5c26b0b1081f8c&mpshare=1&scene=23&srcid=#rd)
