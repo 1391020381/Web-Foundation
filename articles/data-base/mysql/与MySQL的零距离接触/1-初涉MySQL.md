@@ -63,3 +63,9 @@
 * show create database t1;
 * ALTER {DATABASE | SCHEMA} [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset_name
 * DROP {DATABASE | SCHEMA} [IF NOT EXISTS] db_name 
+
+
+
+
+
+
