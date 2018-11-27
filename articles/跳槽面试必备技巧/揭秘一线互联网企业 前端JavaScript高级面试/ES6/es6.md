@@ -15,4 +15,15 @@
 * 本质还是语法糖,使用prototype
 
 3. Promise的基本使用和原理
+*  new Promise实例,而且要return
+*  new Promise时要传入函数,函数有 resolve reject两个参数
+* 成功时执行 resolveI() 失败时执行 reject()
+* then 监听结果
 4. 总结一下ES6其他常用功能
+1. module class promise
+2. let const
+3. 模板字符串/模板变量
+4. 结构赋值
+5. 块级作用域
+6. 函数默认参数
+7. 箭头函数
