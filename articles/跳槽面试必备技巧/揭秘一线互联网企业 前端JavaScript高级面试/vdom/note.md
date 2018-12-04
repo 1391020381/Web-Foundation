@@ -20,3 +20,8 @@
 * vdom中应用diff算法是为了找出需要更新的节点
 * diff实现  patch(container,vnode) patch(vnode,newVnode)
 * 核心逻辑 createElement updateChildren
+
+
+* 用JS模拟DOM结构
+* DOM操作非常昂贵
+* 将DOM对比操作放在JS层
