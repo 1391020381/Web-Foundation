@@ -87,6 +87,7 @@
 # CS基础
 * [CS-Interview-Knowledge-Map](https://github.com/InterviewMap/CS-Interview-Knowledge-Map) 
 * [CS-Notes](https://github.com/CyC2018/CS-Notes) 
+* [ Full Stack Developer Tutorial，后台技术栈/全栈开发/架构师之路，秋招/春招/校招/面试。](https://github.com/frank-lam/fullstack-tutorial)
 * [Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集](https://github.com/jaywcjlove/linux-command)
 * [计算机速成课 | Crash Course 字幕组 (全40集 2018-5-1 精校完成) ](https://github.com/1c7/crash-course-computer-science-chinese)
 
