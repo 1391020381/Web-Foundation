@@ -30,6 +30,8 @@
 *  泛型接口
 *  泛型类
 ```
+// 我们在函数名后添加了<T> 其中 用来指代任意输入的类型,在后面的输入 value:T和输出 Array<T>中即可使用了。
+// 具体在调用的时候,可以指定它具体的类型为string.
 function createArray<T>(length: number, value: T): Array<T> {
     let result: T[] = []    // 类型 + 方括号     let fibonacci:number[] = [1,2,3,4]
     for (let i = 0; i < length; i++) {
