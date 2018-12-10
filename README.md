@@ -56,6 +56,7 @@
 # webpack
 * [webpack-book](https://github.com/survivejs/webpack-book)
 * [webpack-training-project](https://github.com/GoogleChromeLabs/webpack-training-project)
+* [全面的Webpack教程《深入浅出Webpack》电子书](https://github.com/gwuhaolin/dive-into-webpack)
 
 # blog
 * [berwin/Blog](https://github.com/berwin/Blog)
