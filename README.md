@@ -38,6 +38,7 @@
 # Node
 * [How to pass the Node.js interview of ElemeFE. ](https://github.com/ElemeFE/node-interview)
 * [Nodejs学习笔记以及经验总结，公众号"程序猿小卡"](https://github.com/chyingp/nodejs-learning-guide)
+* [Hangzhou-Node-Party 往期记录（slide，照片，预告，视频等）](https://github.com/Hangzhou-Node-Party/Node-Party)
 * [stream-handbook的完整中文版本](https://github.com/jabez128/stream-handbook)
 * [对Node.js中 stream模块的学习积累和理解](https://github.com/zoubin/streamify-your-node-program)
 * [koajs/examples](https://github.com/koajs/examples)
