@@ -23,6 +23,7 @@
 
 # vue
 * [轱辘，面向源码阅读者的 UI 框架](https://github.com/FrankFang/gulu)
+* [A fantastic mobile ui lib implement by Vue ](https://github.com/didi/cube-ui)
 * [vue-source-analysis](https://github.com/dreamhuo/vue-source-analysis)
 * [Vue.js 源码分析 ](https://github.com/ustbhuangyi/vue-analysis)
 
