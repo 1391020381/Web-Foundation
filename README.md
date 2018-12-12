@@ -23,6 +23,8 @@
 
 # vue
 * [轱辘，面向源码阅读者的 UI 框架](https://github.com/FrankFang/gulu)
+* [再谈Vue2组件库开发](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247484025&idx=1&sn=1b347ba776793813d02627d68d090c71&chksm=f9010beece7682f8fca68501877e8087d42823e55e79c205375e6df44a3403fafed1254334ba&mpshare=1&scene=23&srcid=1211NKSwJ4HtF4wuqGGHrvQJ#rd)
+* [如何基于 Vue 2 写一套 UI 库<需要使用微信登录查看>](https://gitbook.cn/gitchat/activity/5a5df169462f9b46f3418520)
 * [A fantastic mobile ui lib implement by Vue ](https://github.com/didi/cube-ui)
 * [vant,注意业务组件](https://youzan.github.io/vant/#/zh-CN/intro)
 * [vue-source-analysis](https://github.com/dreamhuo/vue-source-analysis)
@@ -39,6 +41,7 @@
 
 
 # Node
+* [nodejs服务部署与发布](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247483996&idx=1&sn=6d7dcd977364982da16d94bd4cdc6ea1&chksm=f9010bcbce7682ddf7e4f9927c407248efd5b32b67bc11c349777a286c114c360dead4858b83&mpshare=1&scene=23&srcid=0606S7nqTfPRAEkTDhu3IraK#rd)
 * [How to pass the Node.js interview of ElemeFE. ](https://github.com/ElemeFE/node-interview)
 * [Nodejs学习笔记以及经验总结，公众号"程序猿小卡"](https://github.com/chyingp/nodejs-learning-guide)
 * [Hangzhou-Node-Party 往期记录（slide，照片，预告，视频等）](https://github.com/Hangzhou-Node-Party/Node-Party)
@@ -67,6 +70,7 @@
 
 
 # 监控
+* [超详细！搭建一个前端错误监控系统](https://zhuanlan.zhihu.com/p/51446011?utm_source=wechat_session&utm_medium=social&utm_oi=543756693541003264&wechatShare=1)
 * [web-performance-monitoring-system](https://github.com/wangweianger/web-performance-monitoring-system)
 * [sentry](https://github.com/getsentry/sentry)
 
@@ -90,6 +94,7 @@
 
 
 # CS基础
+* [写代码水平的几个发展阶段](https://juejin.im/post/5a576e98518825734d148a00)
 * [CS-Interview-Knowledge-Map](https://github.com/InterviewMap/CS-Interview-Knowledge-Map) 
 * [CS-Notes](https://github.com/CyC2018/CS-Notes) 
 * [ Full Stack Developer Tutorial，后台技术栈/全栈开发/架构师之路，秋招/春招/校招/面试。](https://github.com/frank-lam/fullstack-tutorial)
