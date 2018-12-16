@@ -23,12 +23,11 @@
 
 # vue
 * [轱辘，面向源码阅读者的 UI 框架](https://github.com/FrankFang/gulu)
-<<<<<<< HEAD
+
 * [从零开始搭建Vue组件库 VV-UI](https://zhuanlan.zhihu.com/p/30948290)
-=======
 * [再谈Vue2组件库开发](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247484025&idx=1&sn=1b347ba776793813d02627d68d090c71&chksm=f9010beece7682f8fca68501877e8087d42823e55e79c205375e6df44a3403fafed1254334ba&mpshare=1&scene=23&srcid=1211NKSwJ4HtF4wuqGGHrvQJ#rd)
 * [如何基于 Vue 2 写一套 UI 库<需要使用微信登录查看>](https://gitbook.cn/gitchat/activity/5a5df169462f9b46f3418520)
->>>>>>> a05b22a1ee29566a0534bcaea7aa644e6bbc8552
+
 * [A fantastic mobile ui lib implement by Vue ](https://github.com/didi/cube-ui)
 * [vant,注意业务组件](https://youzan.github.io/vant/#/zh-CN/intro)
 * [vue-source-analysis](https://github.com/dreamhuo/vue-source-analysis)
