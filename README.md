@@ -23,6 +23,7 @@
 
 # vue
 * [轱辘，面向源码阅读者的 UI 框架](https://github.com/FrankFang/gulu)
+* [从零开始搭建Vue组件库 VV-UI](https://zhuanlan.zhihu.com/p/30948290)
 * [A fantastic mobile ui lib implement by Vue ](https://github.com/didi/cube-ui)
 * [vant,注意业务组件](https://youzan.github.io/vant/#/zh-CN/intro)
 * [vue-source-analysis](https://github.com/dreamhuo/vue-source-analysis)
@@ -80,7 +81,9 @@
 * [webpack-training-project](https://github.com/GoogleChromeLabs/webpack-training-project)
 * [全面的Webpack教程《深入浅出Webpack》电子书](https://github.com/gwuhaolin/dive-into-webpack)
 
-
+# other
+* [我(张鑫旭)对知乎前端相关问题的十问十答](https://www.zhangxinxu.com/wordpress/2017/06/ten-question-about-frontend-zhihu/)
+* [我如何零基础转行成为一个自信的前端](https://lambda.academy/how-i-became-a-confident-frontend-developer)
 # blog
 * [berwin/Blog](https://github.com/berwin/Blog)
 * [梁少峰的个人博客](https://github.com/youngwind/blog)
