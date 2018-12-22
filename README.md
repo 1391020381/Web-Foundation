@@ -44,6 +44,7 @@
 
 
 # Node
+* [easywebpack](https://github.com/easy-team/easywebpack)
 * [nodejs服务部署与发布](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247483996&idx=1&sn=6d7dcd977364982da16d94bd4cdc6ea1&chksm=f9010bcbce7682ddf7e4f9927c407248efd5b32b67bc11c349777a286c114c360dead4858b83&mpshare=1&scene=23&srcid=0606S7nqTfPRAEkTDhu3IraK#rd)
 * [How to pass the Node.js interview of ElemeFE. ](https://github.com/ElemeFE/node-interview)
 * [Nodejs学习笔记以及经验总结，公众号"程序猿小卡"](https://github.com/chyingp/nodejs-learning-guide)
