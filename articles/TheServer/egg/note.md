@@ -1,0 +1,3 @@
+- [自定义环境配置为加载](https://github.com/eggjs/egg/issues/3312)
+- 看下 run 目录下的 application_config.json 里面，对应的 plugin 和 config 节点是否合并正确吧。
+- PS： egg-scripts start --env=sit --daemon --title=egg-server-dubbo-egg 即可，那些 env 没必要。
