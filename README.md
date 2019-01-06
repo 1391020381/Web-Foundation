@@ -46,7 +46,7 @@
 - [掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台](https://github.com/xitu/gold-miner)
 
 # Node
-
+* [新手向之Vue.js + Node.js(koa) 合体指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651230906&idx=1&sn=de2805651f5208b68ca93d77e3459844&chksm=bd494b3e8a3ec2289a0d9fc35abcbd70adb6dce63a0cbd5f2469d6f6263b46273024a3fcf9fd&mpshare=1&scene=23&srcid=0105iUKidGwEc9hMoijjILrX#rd)
 - [easywebpack](https://github.com/easy-team/easywebpack)
 - [nodejs 服务部署与发布](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247483996&idx=1&sn=6d7dcd977364982da16d94bd4cdc6ea1&chksm=f9010bcbce7682ddf7e4f9927c407248efd5b32b67bc11c349777a286c114c360dead4858b83&mpshare=1&scene=23&srcid=0606S7nqTfPRAEkTDhu3IraK#rd)
 - [How to pass the Node.js interview of ElemeFE. ](https://github.com/ElemeFE/node-interview)
