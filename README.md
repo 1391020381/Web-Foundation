@@ -48,6 +48,7 @@
 # Node
 
 - [Node.js 最佳实践](https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md)
+- [node 服务端渲染(完整 demo)](https://juejin.im/post/5c35cac5f265da61120534a5?utm_source=gold_browser_extension#comment)
 - [新手向之 Vue.js + Node.js(koa) 合体指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651230906&idx=1&sn=de2805651f5208b68ca93d77e3459844&chksm=bd494b3e8a3ec2289a0d9fc35abcbd70adb6dce63a0cbd5f2469d6f6263b46273024a3fcf9fd&mpshare=1&scene=23&srcid=0105iUKidGwEc9hMoijjILrX#rd)
 
 * [easywebpack](https://github.com/easy-team/easywebpack)
