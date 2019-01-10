@@ -1,3 +1,4 @@
+* [Nginx开发从入门到精通](http://tengine.taobao.org/book/index.html)
 * [谁说前端不需要懂-Nginx反向代理与负载均衡](https://mp.weixin.qq.com/s?__biz=MzA5NzkwNDk3MQ==&mid=2650587742&idx=1&sn=ca8f942fb82f2e3ee217132a7a015184&chksm=8891d27abfe65b6c262c4b30506bfd0a76ce533066afbc8e8b50cfece26a414095cf14b203bd&mpshare=1&scene=23&srcid=0722eNMEFVzXRtPOidwEdmhI#rd)
 * 反向代理
     * 当我们有一个服务器集群,并且服务器集群中每台服务器的内容一样的时候,同样我们要直接从个人电脑访问到服务器集群的时候无法访问,必须通过第三方服务器才能访问集群。这个时候，
