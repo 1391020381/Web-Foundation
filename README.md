@@ -46,23 +46,27 @@
 - [掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台](https://github.com/xitu/gold-miner)
 
 # Node
-* [新手向之Vue.js + Node.js(koa) 合体指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651230906&idx=1&sn=de2805651f5208b68ca93d77e3459844&chksm=bd494b3e8a3ec2289a0d9fc35abcbd70adb6dce63a0cbd5f2469d6f6263b46273024a3fcf9fd&mpshare=1&scene=23&srcid=0105iUKidGwEc9hMoijjILrX#rd)
-- [easywebpack](https://github.com/easy-team/easywebpack)
-- [nodejs 服务部署与发布](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247483996&idx=1&sn=6d7dcd977364982da16d94bd4cdc6ea1&chksm=f9010bcbce7682ddf7e4f9927c407248efd5b32b67bc11c349777a286c114c360dead4858b83&mpshare=1&scene=23&srcid=0606S7nqTfPRAEkTDhu3IraK#rd)
-- [How to pass the Node.js interview of ElemeFE. ](https://github.com/ElemeFE/node-interview)
-- [Nodejs 学习笔记以及经验总结，公众号"程序猿小卡"](https://github.com/chyingp/nodejs-learning-guide)
-- [Hangzhou-Node-Party 往期记录（slide，照片，预告，视频等）](https://github.com/Hangzhou-Node-Party/Node-Party)
-- [stream-handbook 的完整中文版本](https://github.com/jabez128/stream-handbook)
-- [对 Node.js 中 stream 模块的学习积累和理解](https://github.com/zoubin/streamify-your-node-program)
-- [koajs/examples](https://github.com/koajs/examples)
-- [Koa.js 设计模式-学习笔记](https://github.com/chenshenhai/koajs-design-note)
-- [Egg.js 深入浅出学习笔记](https://github.com/chenshenhai/eggjs-note)
-- [Node.js 从小工坊走向企业级开发](https://github.com/atian25/node-cookbook)
-- [《Node.js：来一打 C++ 扩展》随书源码](https://github.com/XadillaX/nyaa-nodejs-demo)
-- [Awesome Micro npm Packages ](https://github.com/parro-it/awesome-micro-npm-packages)
-- [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
-- [深入理解 Node.js：核心思想与源码分析 ](https://github.com/yjhjstz/deep-into-node)
-- [A progressive Node.js framework for building efficient and scalable server-side applications, heavily inspired by Angular.](https://github.com/nestjs/nest)
+
+- [Node.js 最佳实践](https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md)
+- [node 服务端渲染(完整 demo)](https://juejin.im/post/5c35cac5f265da61120534a5?utm_source=gold_browser_extension#comment)
+- [新手向之 Vue.js + Node.js(koa) 合体指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651230906&idx=1&sn=de2805651f5208b68ca93d77e3459844&chksm=bd494b3e8a3ec2289a0d9fc35abcbd70adb6dce63a0cbd5f2469d6f6263b46273024a3fcf9fd&mpshare=1&scene=23&srcid=0105iUKidGwEc9hMoijjILrX#rd)
+
+* [easywebpack](https://github.com/easy-team/easywebpack)
+* [nodejs 服务部署与发布](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247483996&idx=1&sn=6d7dcd977364982da16d94bd4cdc6ea1&chksm=f9010bcbce7682ddf7e4f9927c407248efd5b32b67bc11c349777a286c114c360dead4858b83&mpshare=1&scene=23&srcid=0606S7nqTfPRAEkTDhu3IraK#rd)
+* [How to pass the Node.js interview of ElemeFE. ](https://github.com/ElemeFE/node-interview)
+* [Nodejs 学习笔记以及经验总结，公众号"程序猿小卡"](https://github.com/chyingp/nodejs-learning-guide)
+* [Hangzhou-Node-Party 往期记录（slide，照片，预告，视频等）](https://github.com/Hangzhou-Node-Party/Node-Party)
+* [stream-handbook 的完整中文版本](https://github.com/jabez128/stream-handbook)
+* [对 Node.js 中 stream 模块的学习积累和理解](https://github.com/zoubin/streamify-your-node-program)
+* [koajs/examples](https://github.com/koajs/examples)
+* [Koa.js 设计模式-学习笔记](https://github.com/chenshenhai/koajs-design-note)
+* [Egg.js 深入浅出学习笔记](https://github.com/chenshenhai/eggjs-note)
+* [Node.js 从小工坊走向企业级开发](https://github.com/atian25/node-cookbook)
+* [《Node.js：来一打 C++ 扩展》随书源码](https://github.com/XadillaX/nyaa-nodejs-demo)
+* [Awesome Micro npm Packages ](https://github.com/parro-it/awesome-micro-npm-packages)
+* [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
+* [深入理解 Node.js：核心思想与源码分析 ](https://github.com/yjhjstz/deep-into-node)
+* [A progressive Node.js framework for building efficient and scalable server-side applications, heavily inspired by Angular.](https://github.com/nestjs/nest)
 
 # WebAssembly
 
@@ -102,12 +106,14 @@
 
 # blog
 
-- [berwin/Blog](https://github.com/berwin/Blog)
-- [梁少峰的个人博客](https://github.com/youngwind/blog)
-- [purplebamboo 的博客](https://github.com/purplebamboo/blog)
-- [前端博客，关注基础知识和性能优化。](https://github.com/creeperyang/blog)
-- [我是木易杨，网易高级前端工程师，跟着我每周重点攻克一个前端面试重难点。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！](https://github.com/yygmind/blog)
-- [薄荷前端](https://github.com/BooheeFE)
+- [jaywcjlove/handbook](https://github.com/jaywcjlove/handbook)
+
+* [berwin/Blog](https://github.com/berwin/Blog)
+* [梁少峰的个人博客](https://github.com/youngwind/blog)
+* [purplebamboo 的博客](https://github.com/purplebamboo/blog)
+* [前端博客，关注基础知识和性能优化。](https://github.com/creeperyang/blog)
+* [我是木易杨，网易高级前端工程师，跟着我每周重点攻克一个前端面试重难点。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！](https://github.com/yygmind/blog)
+* [薄荷前端](https://github.com/BooheeFE)
 
 # Angular
 
