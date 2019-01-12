@@ -17,7 +17,7 @@
 # CSS
 
 - [You-need-to-know-css](https://github.com/l-hammer/You-need-to-know-css)
-- [CSS Inspiration，在这里找到写 CSS 的灵感！](https://github.com/chokcoco/CSS-Inspiration)
+- [CSS Inspiration，在这里找到写 CSS 的灵感！]()
 - [lottie-web](https://github.com/airbnb/lottie-web)
 
 # 性能优化
