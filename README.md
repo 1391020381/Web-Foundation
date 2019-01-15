@@ -71,6 +71,12 @@
 * [深入理解 Node.js：核心思想与源码分析 ](https://github.com/yjhjstz/deep-into-node)
 * [A progressive Node.js framework for building efficient and scalable server-side applications, heavily inspired by Angular.](https://github.com/nestjs/nest)
 
+# 小程序
+
+- [使用 webpack, babel, scss 开发的微信/支付宝小程序项目脚手架](https://github.com/cantonjs/wxapp-boilerplate)
+
+* [微信小程序开发资源汇总 100](https://github.com/justjavac/awesome-wechat-weapp)
+
 # WebAssembly
 
 - [Learn, Teach, Work and Play in the WebAssembly Studio ](http://webassembly.studio)
