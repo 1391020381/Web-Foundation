@@ -84,10 +84,10 @@ function getLength(something:string|number):number{
 // 一般来说,全局变量都是禁止修改的常量,所以大部分情况都应该使用 const 而不是 var 或 let
 // 需要注意的是 ,声明语句中只能定义类型,切勿在声明语句中定义具体的值
 
-declare class Animal{
-  constructor (name:string);
-  sayHi();
-}
+// declare class Animal{
+//   constructor (name:string);
+//   sayHi();
+// }
 
 type Name  = string;
 type NameResolver = ()=> string;
@@ -124,3 +124,24 @@ enum Days {Sum,Mon,Tue,Wed,Thu,Fri,Sat};
 // 修饰符(Modifiers) 修饰符 是一些关键字,用于限定成员或类型的性质。比如 public 表示 公有属性或方法。
 // 抽象类(Abstract Class) 抽象类是提供其他继承的基类,抽象类不允许被实例化。抽象类中的抽象方法必须在子类中被实现
 // 接口(Interfaces)不同类之间公有的属性或方法,可以抽象成一个接口。接口可以被类实现(implements) 一个类只能继承自另一个类,但是可以实现多个接口。
+
+
+class Animal {
+  name:string;
+  constructor(name:string){
+    this.name = name
+  }
+  sayHi(){
+    return `My name is ${this.name}`
+  }
+ 
+} 
+class Cat extends Animal{
+  constructor(name){
+    super(name);
+    console.log(this.name)
+  }
+  sayHi(){
+    return `Meow` + super.sayHi();
+  }
+}
