@@ -1,7 +1,8 @@
 <template>
   <div class="">
     <button :class=" 'i-button-size' + size"
-            :disabled="disabled">{{desc}}</button>
+            :disabled="disabled"
+            @click="handleEmitEvent">{{desc}}</button>
   </div>
 </template>
 
@@ -37,6 +38,15 @@ export default Vue.extend({
   inject: ["name", "app"],
   mounted() {
     console.log("inject-name:", this.name, this.app);
+    this.$on("test", text => {
+      console.log("customButton");
+      window.alert(text);
+    });
+  },
+  methods: {
+    handleEmitEvent() {
+      this.$emit("test", "Hello Vue.js");
+    }
   }
 });
 </script>
