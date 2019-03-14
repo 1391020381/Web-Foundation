@@ -4,13 +4,26 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+<script lang="ts">
+import Vue from "vue";
 
+export default Vue.extend({
+  name: "home",
+  components: {},
+  provide() {
+    return {
+      name: "行云流水justdoit",
+      app: this
+    };
+  }
+});
+</script>
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -7,6 +7,7 @@
 - [冴羽写博客的地方，预计写四个系列：JavaScript 深入系列、JavaScript 专题系列、ES6 系列、React 系列。](https://github.com/mqyqingfeng/Blog)
 - [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 - [JavaScript 标准参考教程（alpha）](http://javascript.ruanyifeng.com/)
+- [现代 Javascript 教程](https://zh.javascript.info/)
 - [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
 - [TypeScript 入门教程](https://github.com/xcatliu/typescript-tutorial)
 - [TypeScript Deep Dive 中文版 ](https://github.com/jkchao/typescript-book-chinese)
