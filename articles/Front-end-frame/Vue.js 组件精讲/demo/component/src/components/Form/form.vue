@@ -9,6 +9,11 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "iForm",
+  provide() {
+    return {
+      form: this
+    };
+  },
   props: {
     model: {
       type: Object
