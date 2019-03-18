@@ -6,6 +6,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { resolve } from "path";
 
 export default Vue.extend({
   name: "iForm",
@@ -24,19 +25,47 @@ export default Vue.extend({
   },
   data() {
     return {
-      field: []
+      fields: []
     };
   },
   created() {
     this.$on("on-form-item-add", field => {
-      if (field) this.field.push(field);
+      if (field) this.fields.push(field);
     });
     this.$on("on-form-item-remove", field => {
-      if (field.prop) this.field.splice(this.field.indexOf(field), 1);
+      if (field.prop) this.fields.splice(this.fields.indexOf(field), 1);
     });
   },
   mounted() {},
-  methods: {}
+  methods: {
+    // 公开方法:全部重置数据
+    resetFields() {
+      this.fields.forEach(field => {
+        field.resetFields();
+      });
+    },
+    //公开方法：全部校验数据,支持Promise
+    validate(callback) {
+      return new Promise(resolve => {
+        let valid = true;
+        let count = 0;
+        this.fields.forEach(field => {
+          field.validate("", errors => {
+            if (errors) {
+              valid = false;
+            }
+            if (++count === this.fields.length) {
+              // 全部完成
+              resolve(valid);
+              if (typeof callback === "function") {
+                callback(valid);
+              }
+            }
+          });
+        });
+      });
+    }
+  }
 });
 </script>
 

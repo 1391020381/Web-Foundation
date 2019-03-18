@@ -12,7 +12,6 @@ function broadcast(componentName, eventName, params) {
 export default {
   methods: {
     dispatch(componentName, eventName, params) {
-      debugger
       let parent = this.$parent || this.$root
       let name = parent.$options.name
       while (parent && (!name || name !== componentName)) {

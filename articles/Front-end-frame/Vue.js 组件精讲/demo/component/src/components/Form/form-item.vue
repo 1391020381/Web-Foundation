@@ -1,8 +1,11 @@
 <template>
   <div>
-    <label v-if="label">{{label}}</label>
+    <label v-if="label"
+           :class="{'i-form-item-label-required':isRequired}">{{label}}</label>
     <div>
       <slot></slot>
+      <div v-if="validateSate ==='error'"
+           class="i-form-message">{{validateMessage}}</div>
     </div>
   </div>
 </template>
@@ -27,6 +30,7 @@ export default Vue.extend({
   },
   data() {
     return {
+      isRequired: false, // 是否为必填
       validateSate: "", // 校验状态
       validateMessage: "" // 校验不通过时的提示信息
     };
@@ -34,6 +38,7 @@ export default Vue.extend({
   mounted() {
     if (this.prop) {
       this.dispatch("iForm", "on-form-item-add", this);
+      this.initialValue = this.fieldValue;
       this.setRules();
     }
   },
@@ -42,11 +47,18 @@ export default Vue.extend({
   },
   computed: {
     fieldValue() {
+      //  fieldValue这个表单需要校验的字段
       return this.form.model[this.prop];
     }
   },
   methods: {
     setRules() {
+      let rules = this.getRules();
+      if (rules.length) {
+        rules.every(rule => {
+          this.isRequired = rule.required;
+        });
+      }
       this.$on("on-form-blur", this.onFieldBlur);
       this.$on("on-form-change", this.onFieldChange);
     },
@@ -57,11 +69,19 @@ export default Vue.extend({
     },
     getFilteredRule(trigger) {
       const rules = this.getRules();
-      return rules.filter(rule => {
-        !rule.trigger || rule.trigger.indexOf(trigger) !== 1;
-      });
+      return rules.filter(
+        rule => !rule.trigger || rule.trigger.indexOf(trigger) !== -1
+      );
+      // return rules.filter(
+      //   rule => !rule.trigger || rule.trigger.indexOf(trigger) !== -1
+      // );
     },
-    validate(trigger, callback = function() {}) {
+    resetFields() {
+      this.validateSate = "";
+      this.validateMessage = "";
+      this.form.model[this.prop] = this.initialValue;
+    },
+    validate(trigger, callback = function(validateMessage) {}) {
       let rules = this.getFilteredRule(trigger);
       if (!rules || rules.length === 0) {
         return true;
@@ -90,4 +110,11 @@ export default Vue.extend({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.i-form-item-label-required::before {
+  content: "*";
+  color: red;
+}
+.i-form-item-message {
+  color: red;
+}
 </style>
