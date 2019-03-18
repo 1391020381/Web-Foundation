@@ -1,0 +1,1 @@
+- 因为 value 被定义为 prop 它只能由父级修改,本身不能修改的,在 <input> 触发 change 事件,也就是点击选择时,不能由 Checkbox 来修改这个 value,所以我们在 data 里定义了一个 currentValue,并把它绑定在 <input :checked="currentValue">

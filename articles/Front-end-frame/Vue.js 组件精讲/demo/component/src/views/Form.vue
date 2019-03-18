@@ -15,6 +15,11 @@
     </i-form>
     <button @click="handleSubmit">提交</button>
     <button @click="handleReset">重置</button>
+
+    <i-select v-bind:selected="selectValue"
+              :selectData="selectData"
+              v-on:change="selectValue = arguments[0]">
+    </i-select>
   </div>
 </template>
 
@@ -23,12 +28,14 @@ import Vue from "vue";
 import iForm from "../components/Form/form.vue";
 import iFormItem from "../components/Form/form-item.vue";
 import iInput from "../components/Form/input.vue";
+import iSelect from "../components/Form/select.vue";
 export default Vue.extend({
   name: "customForm",
   components: {
     iForm,
     iFormItem,
-    iInput
+    iInput,
+    iSelect
   },
   data() {
     return {
@@ -50,7 +57,18 @@ export default Vue.extend({
             trigger: "blur"
           }
         ]
-      }
+      },
+      selectValue: "",
+      selectData: [
+        {
+          value: "A",
+          key: 1
+        },
+        {
+          value: "B",
+          key: 2
+        }
+      ]
     };
   },
   methods: {
