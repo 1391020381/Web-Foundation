@@ -14,7 +14,6 @@
 import Vue from "vue";
 import Emitter from "../../mixins/emitter.js";
 import AsyncValidator from "async-validator";
-import { error } from "util";
 export default Vue.extend({
   name: "iFormItem",
   mixins: [Emitter],

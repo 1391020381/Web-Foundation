@@ -6,7 +6,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { resolve } from "path";
 
 export default Vue.extend({
   name: "iForm",
