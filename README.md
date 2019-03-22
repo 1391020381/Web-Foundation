@@ -79,7 +79,7 @@
 # 小程序
 
 - [近两万字小程序攻略发布了](https://juejin.im/post/5b8fd1416fb9a05cf3710690)
-
+* [深入理解小程序](https://github.com/godbasin/godbasin.github.io)
 * [使用 webpack, babel, scss 开发的微信/支付宝小程序项目脚手架](https://github.com/cantonjs/wxapp-boilerplate)
 * [真正专注于让一套代码运行多端的开发框架，提供标准的 MVVM 架构开发模式统一各类终端](https://github.com/didi/chameleon)
 
