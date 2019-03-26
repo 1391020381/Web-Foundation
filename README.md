@@ -176,6 +176,7 @@
 
 - [freesky](https://github.com/sglfree/freesky)
 - [Awehunt](http://awehunt.com/)
+- [油猴脚本 直接下载百度网盘和百度网盘分享的文件,直链下载超级加速](https://github.com/syhyz1990/baiduyun?utm_source=gold_browser_extension)
 
 # 收集整理远程工作相关的资料
 
