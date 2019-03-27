@@ -7,10 +7,10 @@
   </div>
 </template>
 <script>
-import TableRender from '../components/table-render/table-render.vue'
+ import TableRender from '../components/table-render/table-render.vue'
 export default {
   components: {
-    TableRender
+     TableRender
   },
   methods: {
     handleOpen1 () {

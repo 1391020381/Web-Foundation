@@ -7,7 +7,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="row in data" :key="row[col.key]">
+      <tr v-for="(row,index) in data" :key="index">
         <td v-for="col in columns" :key="row[col.key]">{{row[col.key]}}</td>
       </tr>
     </tbody>
@@ -20,7 +20,7 @@ export default {
     columns:{
       type:Array,
       default(){
-        retrun []
+        return []
       }
     },
     data:{

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TableRender from '../table.vue'
+import TableRender from './table.vue'
 export default {
   data () {
     return {
