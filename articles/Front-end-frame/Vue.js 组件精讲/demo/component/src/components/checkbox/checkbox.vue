@@ -11,7 +11,7 @@
              type="checkbox"
              :disabled="disabled"
              :checked="currentValue"
-             @chang="change" />
+             @change="change" />
     </span>
     <slot></slot>
   </label>
@@ -40,11 +40,17 @@ export default Vue.extend({
     falseValue: {
       type: [String, Number, Boolean],
       default: false
+    },
+    label:{
+      type:[String,Number,Boolean]
     }
   },
   data() {
     return {
-      currentValue: this.value
+      currentValue: this.value,
+      model:[],
+      group:false,
+      parent:null
     };
   },
   created() {},
@@ -69,6 +75,7 @@ export default Vue.extend({
       const value = checked ? this.trueValue : this.falseValue;
       this.$emit("input", value);
       if (this.group) {
+        debugger
         this.parent.change(this.model);
       } else {
         this.$emit("on-change", value);

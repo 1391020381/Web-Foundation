@@ -65,5 +65,6 @@ export {
   findComponentUpward,
   findComponentsUpward,
   findComponentDownward,
+  findComponenstDownward,
   findBrothersComponents
 }
