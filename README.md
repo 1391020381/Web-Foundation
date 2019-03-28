@@ -18,9 +18,9 @@
 # CSS
 
 - [You-need-to-know-css](https://github.com/l-hammer/You-need-to-know-css)
-- [CSS Inspiration，在这里找到写 CSS 的灵感！]()
+- [CSS Inspiration，在这里找到写 CSS 的灵感！](https://github.com/chokcoco/CSS-Inspiration)
 - [lottie-web](https://github.com/airbnb/lottie-web)
-
+* [Learn how to bring animation to your web projects-注意有中文分支](https://github.com/cssanimation/css-animation-101)
 # 性能优化
 
 - [performance-column](https://github.com/barretlee/performance-column/issues)

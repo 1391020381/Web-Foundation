@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/"
-                   >Home</router-link>
-      <router-link to="/funcitonal-component"
-                   >funcitonal-component</router-link>
-      <router-link to="/table-render"
-                   >table-render</router-link>
+      <router-link to="/">Home</router-link>
+      <router-link to="/funcitonal-component">funcitonal-component</router-link>
+      <router-link to="/table-render">table-render</router-link>
+      <router-link to="/table-slot">table-slot</router-link>
     </div>
     <router-view />
   </div>
@@ -25,8 +23,8 @@
   text-align: left;
   a {
     display: block;
-     height: 44px;
-     line-height: 44px;
+    height: 44px;
+    line-height: 44px;
     font-weight: bold;
     color: #2c3e50;
     &.router-link-exact-active {
