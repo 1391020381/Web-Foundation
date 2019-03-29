@@ -25,7 +25,7 @@ export default {
   components: {},
   computed: {
     tagName () {
-      return this.to === '' ? 'button' : 'div'
+      return this.to === '' ? 'button' : 'a'
     },
     tagProps () {
       let props = {}
