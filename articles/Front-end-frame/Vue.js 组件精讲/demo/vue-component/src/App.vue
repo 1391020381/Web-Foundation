@@ -5,6 +5,7 @@
       <router-link to="/funcitonal-component">funcitonal-component</router-link>
       <router-link to="/table-render">table-render</router-link>
       <router-link to="/table-slot">table-slot</router-link>
+      <router-link to="/table-slot2">table-slot2</router-link>
     </div>
     <router-view />
   </div>

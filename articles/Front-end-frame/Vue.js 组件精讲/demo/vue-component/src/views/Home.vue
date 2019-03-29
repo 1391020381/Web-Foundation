@@ -1,5 +1,27 @@
+<!-- component -->
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <i-button>普通按钮</i-button>
+    <br>
+    <i-button to="https://juejin.im">链接按钮</i-button>
+    <br>
+    <i-button to="https://juejin.im" target="_blank">新窗口打开链接按钮</i-button>
   </div>
 </template>
+
+<script>
+import iButton from '../components/button'
+export default {
+  data () {
+    return {
+    }
+  },
+  components: { iButton },
+  computed: {},
+  mounted () { },
+  methods: {}
+}
+
+</script>
+<style lang='scss' scoped>
+</style>

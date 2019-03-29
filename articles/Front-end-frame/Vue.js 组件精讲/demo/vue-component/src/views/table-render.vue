@@ -1,6 +1,7 @@
 <!--  -->
 <template>
   <div>
+      <h1>table-render</h1>
     <table-render :columns="columns"
                   :data="data"></table-render>
   </div>

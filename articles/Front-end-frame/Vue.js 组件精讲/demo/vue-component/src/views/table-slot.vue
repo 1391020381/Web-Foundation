@@ -1,6 +1,7 @@
 <!-- table-slot -->
 <template>
   <div>
+    <h1>table-slot</h1>
     <table-slot ref="table"
                 :columns="columns"
                 :data="data">
@@ -56,71 +57,51 @@ export default {
       columns: [
         {
           title: '姓名',
-          render: (h, { row, column, index }) => {
-            return h(
-              'div',
-              this.$refs.table.$scopedSlots.name({
-                row: row,
-                column: column,
-                index: index
-              })
-            )
-          }
+          slot: 'name'
         },
         {
           title: '年龄',
-          render: (h, { row, column, index }) => {
-            return h(
-              'div',
-              this.$refs.table.$scopedSlots.age({
-                row: row,
-                column: column,
-                index: index
-              })
-            )
-          }
+          slot: 'age'
         },
         {
           title: '出生日期',
-          render: (h, { row, column, index }) => {
-            return h(
-              'div',
-              this.$refs.table.$scopedSlots.birthday({
-                row: row,
-                column: column,
-                index: index
-              })
-            )
-          }
+          slot: 'birthday'
         },
         {
           title: '地址',
-          render: (h, { row, column, index }) => {
-            return h(
-              'div',
-              this.$refs.table.$scopedSlots.address({
-                row: row,
-                column: column,
-                index: index
-              })
-            )
-          }
+          slot: 'address'
         },
         {
           title: '操作',
-          render: (h, { row, column, index }) => {
-            return h(
-              'div',
-              this.$refs.table.$scopedSlots.action({
-                row: row,
-                column: column,
-                index: index
-              })
-            )
-          }
+          slot: 'action'
         }
       ],
-      data: [],
+      data: [
+        {
+          name: '王小明',
+          age: 18,
+          birthday: '919526400000',
+          address: '北京市朝阳区芍药居'
+        },
+        {
+          name: '张小刚',
+          age: 25,
+          birthday: '696096000000',
+          address: '北京市海淀区西二旗'
+        },
+        {
+          name: '李小红',
+          age: 30,
+          birthday: '563472000000',
+          address: '上海市浦东新区世纪大道'
+        },
+        {
+          name: '周小伟',
+          age: 26,
+          birthday: '687024000000',
+          address: '深圳市南山区深南大道'
+        }
+      ],
       editIndex: -1,
       editName: '',
       editAge: '',
@@ -131,32 +112,6 @@ export default {
   components: { TableSlot },
   computed: {},
   mounted () {
-    this.data = [
-      {
-        name: '王小明',
-        age: 18,
-        birthday: '919526400000',
-        address: '北京市朝阳区芍药居'
-      },
-      {
-        name: '张小刚',
-        age: 25,
-        birthday: '696096000000',
-        address: '北京市海淀区西二旗'
-      },
-      {
-        name: '李小红',
-        age: 30,
-        birthday: '563472000000',
-        address: '上海市浦东新区世纪大道'
-      },
-      {
-        name: '周小伟',
-        age: 26,
-        birthday: '687024000000',
-        address: '深圳市南山区深南大道'
-      }
-    ]
   },
   methods: {
     handleSave (index) {
