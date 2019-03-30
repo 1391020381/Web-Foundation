@@ -33,6 +33,7 @@
 - [从零开始搭建 Vue 组件库 VV-UI](https://zhuanlan.zhihu.com/p/30948290)
 - [再谈 Vue2 组件库开发](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247484025&idx=1&sn=1b347ba776793813d02627d68d090c71&chksm=f9010beece7682f8fca68501877e8087d42823e55e79c205375e6df44a3403fafed1254334ba&mpshare=1&scene=23&srcid=1211NKSwJ4HtF4wuqGGHrvQJ#rd)
 - [如何基于 Vue 2 写一套 UI 库<需要使用微信登录查看>](https://gitbook.cn/gitchat/activity/5a5df169462f9b46f3418520)
+* [基于vue2，为公司产品打(zao)造(lun)的(zi)可复用UI组件](https://github.com/monw3c/xmui)
 
 * [❄ 一套小巧的 Vue 组件](https://github.com/BlameDeng/xue-ui)
 
