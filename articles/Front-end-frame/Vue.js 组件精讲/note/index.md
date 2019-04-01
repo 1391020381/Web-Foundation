@@ -1,1 +1,2 @@
 - [掘金小册《Vue.js 组件精讲》示例源码](https://github.com/icarusion/vue-component-book)
+- [基于vue-cli3构建组件库](https://cli.vuejs.org/zh/guide/build-targets.html#%E5%BA%93)
