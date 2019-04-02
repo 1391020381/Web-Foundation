@@ -5,7 +5,8 @@
     <br>
     <i-button to="https://juejin.im">链接按钮</i-button>
     <br>
-    <i-button to="https://juejin.im" target="_blank">新窗口打开链接按钮</i-button>
+    <i-button to="https://juejin.im"
+              target="_blank">新窗口打开链接按钮</i-button>
   </div>
 </template>
 
@@ -18,7 +19,9 @@ export default {
   },
   components: { iButton },
   computed: {},
-  mounted () { },
+  mounted () {
+    console.log('this:', this, '$el:', this.$el)
+  },
   methods: {}
 }
 
