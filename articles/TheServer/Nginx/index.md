@@ -1,3 +1,4 @@
+* [前端必备！最全nginx技术分析](https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247490869&idx=1&sn=5260a9d9064456ac5472ddfa2d0be822&chksm=f951a876ce262160f80d39abbed4ae2225c8d212f64bc9915609cd4ab372fe18c0f2c50a8529&mpshare=1&scene=1&srcid=&key=3122169d70e8fbf2761775aedde2844aa1b2d9258a10ef1d7902a40015dd042489791cb0fa3856ad9546f9a1bac10f77d4946aad0d5bb2f386c2a44c488cb5cd8629a152614bafd5ac1902a839e03f9e&ascene=1&uin=Mjc1MjE0OTkyNQ%3D%3D&devicetype=Windows+7&version=62060739&lang=zh_CN&pass_ticket=rRENBGQP9%2BT4iDBLTPTP%2F4om2DUvA4sIkYx8bfnLYa72FQuQtHusiNZILVTDwrNs)
 * [Nginx开发从入门到精通](http://tengine.taobao.org/book/index.html)
 * [谁说前端不需要懂-Nginx反向代理与负载均衡](https://mp.weixin.qq.com/s?__biz=MzA5NzkwNDk3MQ==&mid=2650587742&idx=1&sn=ca8f942fb82f2e3ee217132a7a015184&chksm=8891d27abfe65b6c262c4b30506bfd0a76ce533066afbc8e8b50cfece26a414095cf14b203bd&mpshare=1&scene=23&srcid=0722eNMEFVzXRtPOidwEdmhI#rd)
 * 反向代理
