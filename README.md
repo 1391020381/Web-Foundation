@@ -22,6 +22,7 @@
 - [CSS Inspiration，在这里找到写 CSS 的灵感！](https://github.com/chokcoco/CSS-Inspiration)
 - [lottie-web](https://github.com/airbnb/lottie-web)
 * [Learn how to bring animation to your web projects-注意有中文分支](https://github.com/cssanimation/css-animation-101)
+* [大厂h5开源视频系列](https://juejin.im/user/574d2f2a2e958a00693487b0/posts)
 # 性能优化
 
 - [performance-column](https://github.com/barretlee/performance-column/issues)
