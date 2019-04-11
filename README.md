@@ -1,7 +1,6 @@
 # Blog
 
 日常工作和学习的记录
-
 # javaScript
 
 - [冴羽写博客的地方，预计写四个系列：JavaScript 深入系列、JavaScript 专题系列、ES6 系列、React 系列。](https://github.com/mqyqingfeng/Blog)
