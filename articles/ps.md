@@ -4,4 +4,5 @@
 3. 编辑首选项(单位与尺寸 标尺px  文字px)
 4. 窗口 工作区  保存设置好的工作区
 5. 基于参考切片,转化为web格式
+
 6. [前端ps切图，图文教程，详细](http://blog.csdn.net/obkoro1/article/details/69817571)
