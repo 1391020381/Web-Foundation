@@ -114,7 +114,8 @@
 - [Pro Git （第一版） 中文版](https://github.com/iissnan/progit)
 
 # webpack
-
+* [使用 webpack 定制前端开发环境](https://github.com/1391020381/Web-Foundation/tree/master/articles/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%BF%E7%94%A8%20webpack%20%E5%AE%9A%E5%88%B6%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
+* [webpack4-learn](https://github.com/ITxiaohao/webpack4-learn)
 - [webpack-book](https://github.com/survivejs/webpack-book)
 - [webpack-training-project](https://github.com/GoogleChromeLabs/webpack-training-project)
 - [全面的 Webpack 教程《深入浅出 Webpack》电子书](https://github.com/gwuhaolin/dive-into-webpack)
