@@ -182,7 +182,7 @@
 - [Awehunt](http://awehunt.com/)
 - [油猴脚本 直接下载百度网盘和百度网盘分享的文件,直链下载超级加速](https://github.com/syhyz1990/baiduyun?utm_source=gold_browser_extension)
 
-# 【Jetbrains IDE破解】（Jetbrains系列产品2019.1最新激活方法[持续更新]）
+# [Jetbrains IDE破解]（https://zhile.io/2018/08/17/jetbrains-license-server-crack.html）
 # 收集整理远程工作相关的资料
 
 - [remote-working](https://github.com/greatghoul/remote-working)
