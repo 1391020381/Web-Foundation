@@ -14,7 +14,7 @@
 - [JS 函数式编程指南中文版 ](https://github.com/llh911001/mostly-adequate-guide-chinese)
 - [JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
 - [how-javascript-works](https://github.com/Troland/how-javascript-works)
-
+* [如何开发一款 60fps 的“无缝滚动”插件](https://github.com/HaoChuan9421/blog/issues/12)
 # CSS
 
 - [You-need-to-know-css](https://github.com/l-hammer/You-need-to-know-css)
