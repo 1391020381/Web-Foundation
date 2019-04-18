@@ -31,6 +31,7 @@
 - [轱辘，面向源码阅读者的 UI 框架](https://github.com/FrankFang/gulu)
 - [如何基于 Vue 2 写一套 UI 库<需要使用微信登录查看>](https://gitbook.cn/gitchat/activity/5a5df169462f9b46f3418520)
 * [基于vue2，为公司产品打(zao)造(lun)的(zi)可复用UI组件](https://github.com/monw3c/xmui)
+* [一套正在逐渐完善的基于 Vue 2.5PC端UI组件库](https://github.com/jumodada/vueXin)
 * [❄ 一套小巧的 Vue 组件](https://github.com/BlameDeng/xue-ui)
 * [UI Toolkit for Web, Vue2.0-heyui](https://github.com/heyui/heyui)
 - [从零开始搭建 Vue 组件库 VV-UI](https://zhuanlan.zhihu.com/p/30948290)
