@@ -4,3 +4,29 @@
 # 并行
 * 把连接多条命令的 && 符号替换成 & 即可
 * npm-run-all
+
+
+* 常见的做法使用 husky 或者 pre-commit在本地提交前做lint
+* npm install -D husky
+
+```
+{
+  "script":{
+    "precommit":"eslint src/**/*.js"
+  }
+}
+
+```
+
+* lint-staged 每次提交只检查本次提交修改的文件
+* npm install lint-staged -D 
+  ```
+  {
+    "script":{
+      "precommit":"lint-staged"
+    },
+    "lint-staged":{
+      "src/**/*.js":"eslint"
+    }
+  }
+  ```

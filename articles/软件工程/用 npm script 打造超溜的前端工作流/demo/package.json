@@ -6,7 +6,7 @@
   "scripts": {
     "lint:js": "eslint *.js",
     "lint:js:fix": "npm run lint:js -- --fix",
-     "precommit":"npm run lint"
+     "precommit":"npm run lint:js"
   },
   "author": "",
   "license": "ISC",
