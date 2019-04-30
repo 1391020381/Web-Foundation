@@ -30,3 +30,22 @@
     }
   }
   ```
+
+# npm script的 钩子
+* npm script的设计者为命令的执行增加了类似的生命周期的机制,具体来说就是 pre 和 post 钩子脚本。
+* 这种特性在某些操作前需要做检查,某些操作后需要做清理的情况下非常有用。
+
+# 实现 npm script 跨平台兼容
+
+## 文件系统操作的跨平台兼容
+* rimraf 或 del-cli,用来删除文件和目录, 实现类似 rm -rf的功能
+* cpr 用于拷贝 复制文件和目录,实现类似于 cp -r 的功能
+* make-dir-cli 用于创建目录,实现类似于 mkdir -p的功能。
+
+
+# 用 cross-env 设置环境变量
+
+
+
+*  scripty 
+*  用 node.js 脚本替代复杂的 npm script    shelljs
