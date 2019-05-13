@@ -52,3 +52,7 @@
 
 
    * 在这篇文章中，从对象的基本理论出发，和你理清了关于对象的一些基本概念，分析了 JavaScript 对象的设计思路。接下来又从运行时的角度，``` 介绍了 JavaScript 对象的具体设计：具有高度动态性的属性集合 ```。
+
+
+
+* ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/img/%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%8E%9F%E7%94%9F%E5%AF%B9%E8%B1%A1.png)

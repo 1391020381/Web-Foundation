@@ -20,7 +20,7 @@
 
 ## 内置对象*固有对象
 * 我们在前面说过,固有对象是由标准规定,随着javascript运行时创建而自动创建的对象实例。
-
+* ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/img/%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%8E%9F%E7%94%9F%E5%AF%B9%E8%B1%A1.png)
 ## 内置对象*原生对象
 * 我们把JavaScript中，能够通过语言本身的构造器创建的对象称作原生对象。
 * 几乎所有这些构造器的能力都是无法用纯 JavaScript 代码实现的，它们也无法用 class/extend 语法来继承。
@@ -67,3 +67,4 @@ o.getValue(); //100
 <li>类型数组和数组缓冲区：跟内存块相关联，下标运算比较特殊。</li>
 <li>bind 后的 function：跟原来的函数相关联。</li>
 </ul>
+
