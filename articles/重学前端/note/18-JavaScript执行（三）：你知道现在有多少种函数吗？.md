@@ -87,3 +87,5 @@ o.showThis(); // o
 <li>将 this 和调用参数传给构造器，执行；</li>
 <li>如果构造器返回的是对象，则返回，否则返回第一步创建的对象。</li>
 </ul>
+
+* ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/img/newFunction.png)
