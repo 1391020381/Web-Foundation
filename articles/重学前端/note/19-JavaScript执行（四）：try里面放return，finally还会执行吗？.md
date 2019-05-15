@@ -28,3 +28,15 @@ console.log(foo());
 
 * JavaScript使用Completion Record 类型,控制语句执行过程
 
+* ![](https://raw.githubusercontent.com/1391020381/Web-Foundation/master/articles/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/img/%E8%AF%AD%E5%8F%A5%E5%88%86%E7%B1%BB.jpg)
+
+### 普通的语句
+* 在javascript中,我们把不带控制能力的语句称为普通语句。
+
+### 语句块
+
+* 语句块就是拿大括号括起来的一组语句,它是一种语句的复合结构,可以嵌套。
+
+### 控制型语句
+
+### 带标签的语句
