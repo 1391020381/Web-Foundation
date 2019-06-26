@@ -1,0 +1,1 @@
+* [MongoDB安装配置教程-windows](https://www.cnblogs.com/zhoulifeng/p/9429597.html)
