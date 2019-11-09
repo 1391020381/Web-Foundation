@@ -108,6 +108,7 @@
 # 监控
 
 - [超详细！搭建一个前端错误监控系统](https://zhuanlan.zhihu.com/p/51446011?utm_source=wechat_session&utm_medium=social&utm_oi=543756693541003264&wechatShare=1)
+- [一步一步搭建前端监控系统](https://zhuanlan.zhihu.com/webfunny)
 - [web-performance-monitoring-system](https://github.com/wangweianger/web-performance-monitoring-system)
 - [sentry](https://github.com/getsentry/sentry)
 
