@@ -22,3 +22,6 @@
  * Android调用H5原生loadurl来调用h5,4.4及以上还可以通过 evaluateJavaScript 调用
  * H5调ios原生通过 javascriptCore注册(需ios7以上),然后H5直接调用
  * IOS调用h5通过 stringByEvaluatingJavaScriptFromString
+
+
+ * [Hybrid APP架构设计思路](https://segmentfault.com/a/1190000004263182)
